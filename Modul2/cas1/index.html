@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <script>
+        console.log("pozdarav iz java scripta")
+
+        var x = 3;
+        var y = -4;
+        var z = x - y;
+
+        var vreme = 14;
+
+        if (vreme > 13 && vreme < 15) {
+            console.log("vreme je izmedju 13 i 15");
+        } else {
+            console.log("vreme nije izmedju 13 i 15");
+        }
+
+        var b1 = 5;
+        console.log(b1);
+        var b2 = "pera";
+        console.log(b2 + " ista promenjiva posle izmene")
+
+        if (x + y > 0) {
+            console.log("zvir prve dve promenjive je pozitivan broj");
+        } else {
+            console.log("zbir prve dve promenjive nije pozitivan broj");
+        }
+
+        if (x * z > 15 && y < 0) {
+            console.log("proizvod prve i trece promenjive je veci od 15 i druga variabla je negativna ");
+        } else {
+            console.log("Proizvod prve i trece je broj veci od 15 ili je druga varijabla pozitivna");
+        }
+
+        var x1 = prompt("unesite vrednost za x broj");
+        console.log("uneta vrednost za x = " + x1);
+
+        if (x1 >= 1 && x1 <= 5) {
+            switch (x1) {
+                case "1":
+                    console.log("zadata vrednost je izmedju 1 i 5 i zadata vrednost je " + x1);
+                    break;
+                case "2":
+                    console.log("zadata vrednost je izmedju 1 i 5 i zadata vrednost je " + x1);
+                    break;
+                case "3":
+                    console.log("zadata vrednost je izmedju 1 i 5 i zadata vrednost je " + x1);
+                    break;
+                case "4":
+                    console.log("zadata vrednost je izmedju 1 i 5 i zadata vrednost je " + x1);
+                    break;
+                case "5":
+                    console.log("zadata vrednost je izmedju 1 i 5 i zadata vrednost je " + x1);
+                    break;
+                default:
+                    break;
+            }
+        } else if (x1 >= 8 && x1 <= 10) { // mora biti vece prvo pa onda jednako
+            console.log("usao sam u switch");
+            switch (x1) {
+                case "8":
+                    console.log("zadata vrednost je izmedju 8 i 10 " + x1);
+                    break;
+                case "9":
+                    console.log("zadata vrednost je izmedju 8 i 10 " + x1);
+                    break;
+                case "10":
+                    console.log("zadata vrednost je izmedju 8 i 10 " + x1);
+                    break;
+
+                default:
+                    break;
+            }
+        } else {
+            console.log("uneta vrednost nije u opsegu izmedju 1 do 5 i 8 do 10");
+        }
+
+        /*
+        case 1;
+        case 2;
+        case 3:
+        neki kod +
+        break; ovo je drugo nacin pisanja ove zajebancije bukvalno kopira kod iz prvog donjeg case sa kodom
+         */
+
+        // var broj1 = -7;
+        // var broj2 = 1;
+        // var zbir = broj1+broj2;
+        var i = 0;
+
+        while (i < 5) {
+            console.log("njegova varianta = " + i);
+            i++
+        }
+
+        // do {
+        //     zbir;
+        // } while (zbir < 0){
+        //     console.log("trenutna iteracije = " + zbir );
+        //     i++
+        // };
+
+
+        // switch (x1) {
+        //     case "1", "2", "3", "4", "5":
+        //         if (x1 = 1) {
+        //             console.log("zadata vrednost je izmedju 1 i 5 i zadata vrednost je " + x1);
+        //         } else if (x1 = 2) {
+        //             console.log("zadata vrednost je izmedju 1 i 5 i zadata vrednost je " + x1);
+        //         } else if (x1 = 3) {
+        //             console.log("zadata vrednost je izmedju 1 i 5 i zadata vrednost je " + x1);
+        //         } else if (x1 = 4) {
+        //             console.log("zadata vrednost je izmedju 1 i 5 i zadata vrednost je " + x1);
+        //         } else if (x1 = 5) {
+        //             console.log("zadata vrednost je izmedju 1 i 5 i zadata vrednost je " + x1);
+        //         } else{
+        //             console.log("uneta vrednost nije u opsegu izmedju 1 i 5 uneta vrednost je = " + x1);
+        //         }
+
+        //         break;
+
+        //     case "8", "9", "10":
+        //         console.log("zadata vrednost je izmedju 8 i 10 " + x1);
+        //         break;
+
+        //     default:
+        //         break;
+        // }
+
+
+        var i;
+        for (i = 0; i < 10; i++) {
+            console.log("for perlja trenutna iteracija = " + i);
+        }
+
+
+        for (var i1 = 0; i1 < 10; i1++) {
+            if (i1 == 5) {
+                console.log("broj je: " + i1)
+                break;
+            }
+
+        }
+        console.log(" zadatak 3 pocetak ");
+        var x1122 = -7;
+        var y1122 = 1;
+        var zbir = x1122 + y1122;
+        while (x1122+y1122<1) {
+        console.log("y je " +y1122);
+        y1122++
+        }
+
+        console.log(" zadatak 3 kraj ");
+
+        console.log(" zadatak 4 pocetak ");
+        for (var z = 0; z < 10; z++) {
+            if (z % 2 == 0) {
+                console.log("ovaj broj je deljiv sa 2 " + z)
+            }
+        }
+        console.log(" zadatak 4 kraj ")
+
+        console.log("pocetak zadatka 5"); // petlja mkay
+        var niz = ["saab", "volvo", "mercedes"];
+        ixx = 0;
+        for (ixx; ixx < niz.length; ixx++) {
+            console.log(niz[ixx]);
+        }
+        console.log("kraj zadatka 5");
+
+        /* 
+        Napisati for petlju koja prolazi kroz zadati niz i ispisuje ga
+ali prekida sa izvrsavanjem ukoliko naidje na element "volvo"
+var niz = ["saab", "volvo", "mercedes"];
+        */
+
+        console.log("pocetak zadatka 6");
+        var niz2 = ["saab", "volvo", "mercedes"];
+        ix2 = 0;
+        for (ix2; ix2 < niz2.length; ix2++) {
+            if (niz2[ix2] != "volvo") {
+                console.log(niz2[ix2])
+            } else if (niz2[ix2] == "volvo") {
+                console.log("naisao sam na volvo prekidam iteraciju")
+                break;
+            }
+        }
+        console.log("kraj zadatka 6");
+
+        console.log("pocetak zadatka 7");
+
+        var niz3 = ["saab", "volvo", "mercedes"];
+        ix3 = 0;
+        for (ix3; ix3 < niz3.length; ix3++) {
+            if (niz3[ix3] != "volvo") {
+                console.log(niz3[ix3])
+            } else if (niz3[ix3] == "volvo") {
+                console.log("petlja 3 naisao sam na volvo preskacem")
+                continue;
+            }
+        }
+
+        console.log("kraj zadatka 7");
+        console.log("pocetak zadatka 8");
+        for (ixy = 0; ixy < 20; ixy++) {
+            if (ixy % 3 == 0) {
+                console.log("ovaj broj je deljiv sa 3 = " + ixy);
+            }
+        }
+        console.log("kraj zadatka 8");
+
+        console.log("pocetak zadatka 9");
+        var nizCelihBrojeva = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        console.log("moj niz " + nizCelihBrojeva);
+        zbirNiz = 0;
+        for (iNiz = 0; iNiz < nizCelihBrojeva.length; iNiz++) {
+            zbirNiz = zbirNiz + iNiz;
+            // druga varianta zbirNiz += niCelihBrojeva[iNiz++];
+            console.log("zbir svih vrednosti niza = " + zbirNiz);
+
+        }
+        var srednjaVrednost = zbirNiz / nizCelihBrojeva.length;
+        console.log("srednja vrednost niza = " + srednjaVrednost);
+        console.log("kraj zadatka 9");
+
+        /*Zadatak 10
+Napisati program koji utvrđuje da li se u datom nizu celih brojeva nalazi broj 5. */
+
+        console.log("pocetak zadatka 10");
+        var nizCelihBrojeva2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        for(var nizCelihBr = 0; nizCelihBr < nizCelihBrojeva2.length; nizCelihBr++){
+            if (nizCelihBrojeva2[nizCelihBr] == 5) {
+                console.log("broj 5 postoji u nizu = " + nizCelihBrojeva2[nizCelihBr])
+            }
+        }
+        console.log("kraj zadatka 10");
+//#region 
+        /*   int simetrican(int a[], int n){
+	int i;
+
+	for(i=0; i<n/2; i++){
+		if(a[i]!=a[n-i-1])
+			return 0;
+	}
+
+	return 1;
+}
+
+int main(void){
+
+	int a[6]={2, 4, 5, 6, 4, 2};
+	int b[4]={1, 3, 3, 1};
+
+	if(simetrican(a, 6))
+		printf("Niz a je simetrican!\n");
+	else
+		printf("Niz a nije simetrican!\n");
+
+
+	if(simetrican(b, 4))
+		printf("Niz b je simetrican!\n");
+	else
+		printf("Niz b nije simetrican!\n");
+
+
+	return 0;
+
+} */ 
+
+console.log("pocetak zadatka 11")
+var r = [[5, 7, 3, 3, 7, 5], [2, 7, 9, 9, 7, 2]];
+
+function isSymmetric(r) {
+    // convert to object
+    var rel = {}
+    for (var i = 0; i < r.length; i++) {
+        if (!(r[i][0] in rel)) rel[r[i][0]] = {};
+        rel[r[i][0]][r[i][1]] = true;
+    }
+    // Test to see if opposite relation is in object
+    for (var a in rel) {
+        for (var b in rel[a]) {
+            if (!rel[b] || !rel[b][a]) return false;
+        }
+    }
+
+    return true;
+}
+
+console.log(isSymmetric(r));
+
+console.log("kraj zadatka 11");
+
+//#endregion
+    </script>
+    <p>pozdrav iz java scripta</p>
+</body>
+
+</html>
