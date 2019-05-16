@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Marko Domaci Modul 1 Cas 1</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <p id="hello"></p>
     <script>
-        console.log("pozdarav iz java scripta")
+        //#region 
+        var zzzz = "pozdrav iz java scripta";
+        document.getElementById("hello").append(zzzz);
+        console.log(zzzz);
 
         var x = 3;
         var y = -4;
@@ -90,7 +94,7 @@
         case 2;
         case 3:
         neki kod +
-        break; ovo je drugo nacin pisanja ove zajebancije bukvalno kopira kod iz prvog donjeg case sa kodom
+        break; ovo je drugo nacin pisanja  bukvalno kopira kod iz prvog donjeg case sa kodom
          */
 
         // var broj1 = -7;
@@ -137,7 +141,8 @@
         //         break;
         // }
 
-
+        //#endregion
+        //#region 
         var i;
         for (i = 0; i < 10; i++) {
             console.log("for perlja trenutna iteracija = " + i);
@@ -151,16 +156,20 @@
             }
 
         }
+        //#endregion
+
+        //#region 
         console.log(" zadatak 3 pocetak ");
         var x1122 = -7;
         var y1122 = 1;
         var zbir = x1122 + y1122;
-        while (x1122+y1122<1) {
-        console.log("y je " +y1122);
-        y1122++
+        while (x1122 + y1122 < 1) {
+            console.log("y je " + y1122);
+            y1122++
         }
 
         console.log(" zadatak 3 kraj ");
+        //#endregion
 
         console.log(" zadatak 4 pocetak ");
         for (var z = 0; z < 10; z++) {
@@ -238,13 +247,13 @@ Napisati program koji utvrđuje da li se u datom nizu celih brojeva nalazi broj 
 
         console.log("pocetak zadatka 10");
         var nizCelihBrojeva2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-        for(var nizCelihBr = 0; nizCelihBr < nizCelihBrojeva2.length; nizCelihBr++){
+        for (var nizCelihBr = 0; nizCelihBr < nizCelihBrojeva2.length; nizCelihBr++) {
             if (nizCelihBrojeva2[nizCelihBr] == 5) {
                 console.log("broj 5 postoji u nizu = " + nizCelihBrojeva2[nizCelihBr])
             }
         }
         console.log("kraj zadatka 10");
-//#region 
+        //#region 
         /*   int simetrican(int a[], int n){
 	int i;
 
@@ -275,35 +284,71 @@ int main(void){
 
 	return 0;
 
-} */ 
+} */
 
-console.log("pocetak zadatka 11")
-var r = [[5, 7, 3, 3, 7, 5], [2, 7, 9, 9, 7, 2]];
+        console.log("pocetak zadatka 11") // provera da li su nizovi simetricni
 
-function isSymmetric(r) {
-    // convert to object
-    var rel = {}
-    for (var i = 0; i < r.length; i++) {
-        if (!(r[i][0] in rel)) rel[r[i][0]] = {};
-        rel[r[i][0]][r[i][1]] = true;
-    }
-    // Test to see if opposite relation is in object
-    for (var a in rel) {
-        for (var b in rel[a]) {
-            if (!rel[b] || !rel[b][a]) return false;
+        function isSymmetric(r) {
+            let isSymmetric = arr => {
+                for (var i = 0; i < arr.length; i++) {
+                    if (arr[i] !== arr[arr.length - (i + 1)])
+                        return false
+                }
+                return true
+            }
+
+            console.log(isSymmetric([5, 7, 3, 3, 7, 5])) // ok
+            console.log(isSymmetric([1, 7, 9, 9, 7, 1])) // ok
+            console.log(isSymmetric([1, 7, 9, 9, 7, 5])) // ok
         }
-    }
 
-    return true;
-}
+        isSymmetric();
 
-console.log(isSymmetric(r));
+        console.log("kraj zadatka 11");
+        //#endregion
 
-console.log("kraj zadatka 11");
+        //#region 
+        console.log("pocetak zadatka 12");
+        var myArray = [
+            [2, 0, 10, 100],
+            [3, 4, 5, 0, 10, 0],
+            [11, 12, 11, 0, 10, 12, 0, 15, 0, 10, 0]
+        ]; // ugnjezdeni nizovi 
 
-//#endregion
+        var counter = 0;
+        console.log(myArray, myArray[0].length, myArray[1].length, myArray[2].length);
+        var arrayLenght1 = myArray[0].length;
+        var arrayLenght2 = myArray[1].length;
+        var arrayLenght3 = myArray[2].length;
+        console.log(arrayLenght1, arrayLenght2, arrayLenght3);
+
+        for (var iterator = 0; iterator <= myArray[0].length; iterator++) {
+            //   console.log("this is the current value " + iterator); mkay
+
+            if (myArray[0][iterator] == 0) {
+                counter = counter + 1;
+                console.log("this is the count after a row 1 is passed " + counter);
+            }
+
+        }
+        for (var iterator = 0; iterator <= myArray[1].length; iterator++) {
+            if (myArray[1][iterator] == 0) {
+                counter = counter + 1;
+                console.log("this is the count after a row 2 is passed " + counter);
+            }
+        }
+        for (var iterator = 0; iterator <= myArray[2].length; iterator++) {
+            if (myArray[2][iterator] == 0) {
+                counter = counter + 1;
+                console.log("this is the count after a row 3 is passed " + counter);
+            }
+        }
+
+        console.log("this is the final count after all the rows have been checked for 0 = " + counter);
+        console.log("kraj zadatka 12");
+        //#endregion
     </script>
-    <p>pozdrav iz java scripta</p>
+
 </body>
 
 </html>
