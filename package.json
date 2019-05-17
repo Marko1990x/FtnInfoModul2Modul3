@@ -1,0 +1,31 @@
+{
+  "name": "fedmodul23",
+  "version": "1.0.0",
+  "description": "rad na casovima modula 2 i 3 fed kursa na ftn info",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marko1990x/FtnInfoModul2Modul3.git"
+  },
+  "keywords": [
+    "fed",
+    "marko",
+    "rad",
+    "na",
+    "casu",
+    "kurs"
+  ],
+  "author": "Marko Dunovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marko1990x/FtnInfoModul2Modul3/issues"
+  },
+  "homepage": "https://github.com/Marko1990x/FtnInfoModul2Modul3#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-google": "^0.13.0"
+  }
+}
