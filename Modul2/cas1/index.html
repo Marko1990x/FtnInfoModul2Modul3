@@ -346,19 +346,46 @@ int main(void){
 
         console.log("this is the final count after all the rows have been checked for 0 = " + counter);
         console.log("kraj zadatka 12");
+
+
+
+        // alternativno resenlje stackoverflow
+
+        /*
+        var myArray = [
+        [2, 0, 10, 100],
+        [3, 4, 5, 0, 10, 0],
+        [11, 12, 11, 0, 10, 12, 0, 15, 0, 10, 0]
+     ];
+
+    myArray.map((row, rowNumber) => console.log(`number of zeros in row ${rowNumber}:`, row.filter(element => element === 0).length))
+
+
+         var myArray = [
+           [2, 0, 10, 100],
+           [3, 4, 5, 0, 10, 0],
+           [11, 12, 11, 0, 10, 12, 0, 15, 0, 10, 0]
+        ];
+
+       const [row1, row2, row3] = myArray.map((row, rowNumber) => row.filter(element => element === 0).length)
+
+         console.log(row1);
+        console.log(row1+row2);
+        console.log(row1+row2+row3);
+
+        */
         //#endregion
 
 
         //#region 
         console.log("pocetak zadatka 13 i 14")
 
-        var myArrayLargestNumber = [11.31,12.10,13.11,14,150.11,20.12,10.11,10,99, 1.10];
+        var myArrayLargestNumber = [11.31, 12.10, 13.11, 14, 150.11, 20.12, 10.11, 10, 99, 1.10];
         console.log(Math.max.apply(null, myArrayLargestNumber)); // max numba
         console.log(Math.min.apply(null, myArrayLargestNumber)); // min numba
 
         console.log("kraj zadatka 13 i 14")
         //#endregion
-
     </script>
 
 </body>
