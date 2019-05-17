@@ -442,7 +442,8 @@ var matrix = [
 ];
 
 for (var i = 0; i < 4; i++){  // ovo je brojac za redive i kolene u matricama
-    var brNula = 0;
+    var brNula = 0;  // ovo ponistava broj nula kada izadje iz unutrasnje petlje
+    // ako hocu da izbrojim sve instance neke vrednosti u matrici onda stavim ovu var izvan obe petlje i onda nece biti ponistene
     for(var j = 0; j < 4; j++){
         //console.log(matrix[i][j]);
         if (matrix[i][j] == 0) {
