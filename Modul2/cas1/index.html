@@ -461,14 +461,15 @@ int main(void){
 
 
         //#region 
-        console.log("zadatak 15 njegova varianta pocetak");
+        console.log("zadatak 14 njegova varianta pocetak");
 
         var matrix = [
             [1, 2, 3, 0],
             [4, 0, 5, 6],
             [0, 7, 5, 9],
             [0, 0, 1, 0],
-        ];
+        ];  // provera da je i == j nam osigurava da ce matrica biti gledana po diagonali zato sto su i i j ovek isti sto znaci 
+        // da ce uvek biti 0 0 1 1 2 2 3 3 4 4 itd sto mi daje diagonalu elemenata za proveru.
 
         var najveci = matrix[0][0];   // nalazi najveci element matrice
         for (var i = 0; i < matrix.length; i++){
@@ -482,8 +483,30 @@ int main(void){
         }
 
         console.log("najveci element matrice je " + najveci); 
+        console.log("zadatak 14 njegova varianta kraj");
+        //#endregion 
+
+
+        //#region 
+        console.log("zadatak 15 njegova varianta pocetak");
+
+        var redova = 4;
+        var kolona = 4;
+
+        var novaMatrica = [];
+
+        for (var i = 0; i < redova; i++){
+            novaMatrica[i] = [];
+            for (var j = 0; j < kolona; j++){
+                novaMatrica[i][j] = j + 1;
+            }
+        }
+
+        console.log("ovo je generisana matrica = " + novaMatrica);  // prikaz ove matrice je ok
+        //console.log(matrix);
         console.log("zadatak 15 njegova varianta kraj");
         //#endregion 
+
     </script>
 
 </body>

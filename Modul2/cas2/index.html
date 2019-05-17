@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>caos pogledaj konzolu</p>
+
+    <script>
+        //#region 
+        console.log("zadatak 1 pocetak");
+        var vocke1 = ["banana", "kruska", "jabuka"];
+        var vocke2 = ["tresnja", "sljiva", "jagoda"];
+
+        var novaZezancija = [];
+        novaZezancija.push(vocke1, vocke2);
+        console.log(novaZezancija);
+
+        /*
+        njegovo resenje 
+        for (var i = 0; i< vocke1.length; i++){
+            novaZezancija.push(vocke1[i]);
+        }
+
+        for (var i = 0; i< vocke2.length; i++){
+            novaZezancija.push(vocke2[i]);
+        }
+
+
+         for (var i in vocke1){
+            novaZezancija.push(vocke1[i]);
+        }
+
+        for (var i in vocke2){
+            novaZezancija.push(vocke2[i]);
+        }
+        */
+        // dvodimenzionalni nizovi se prave ako bi uradio npr
+        //vocke1.push(vocke2) ovo bi ugnezdilo jedan niz u drugi
+
+        console.log("zadatak 1 kraj");
+        //#endregion
+
+
+        //#region 
+        console.log("zadatak 2 pocetak");
+
+        //https://www.w3schools.com/jsref/jsref_includes_array.asp
+
+        // provera da li ima istih elemenata u vise nizova kada se spajaju
+
+        var vocke12 = ["banana", "kruska", "jabuka", "sljiva"];
+        var vocke22 = ["tresnja", "sljiva", "jagoda", "kupina", "malina"];
+
+        var vocke_sve = [];
+
+
+        for (var i in vocke12) {
+            vocke_sve.push(vocke12[i]);
+        }
+
+        for (var i in vocke22) {
+            if (!vocke_sve.includes(vocke22[i])) {
+                vocke_sve.push(vocke22[i]);
+            }
+        }
+
+        console.log(vocke_sve);
+
+        /*    ovo je verovatno druga varianta ovo kasnije
+                vocke_sve.push(vocke12, vocke22);
+                console.log("pre funkcije " + vocke_sve);
+
+                function find_duplicate_in_array(arra1) {
+                    const object = {};
+                    const result = [];
+
+                    arra1.forEach(item => {
+                        if (!object[item])
+                            object[item] = 0;
+                        object[item] += 1;
+                    })
+
+                    for (const prop in object) {
+                        if (object[prop] >= 2) {
+                            result.push(prop);
+                        }
+                    }
+
+                    return result;
+                }
+
+                console.log(find_duplicate_in_array(vocke_sve));
+                
+        */
+
+        console.log("zadatak 2 kraj");
+        //#endregion
+
+
+        //#region 
+        console.log("zadatak 3 pocetak");
+
+        // moja varianta uradjeno ok
+
+        var automobili = [
+            ["mercedes", "b"],
+            ["opel", "d"],
+            ["toyota", "d"],
+            ["bmw", "b"],
+            ["volvo", "d"]
+        ];
+
+        var benzin = [];
+        var dizel = [];
+
+        for (var i = 0; i < automobili.length; i++){
+            if (automobili[i][1] == "b") {
+                benzin.push(automobili[i][0]);
+            }else if (automobili[i][1]== "d"){
+                dizel.push(automobili[i][0]);
+            }
+
+        }
+
+        console.log("ovo su automobili na benzinu " + benzin);
+        console.log("ovo su automobili na dizelu " + dizel);
+
+        console.log("zadatak 3 kraj");
+        //#endregion
+    </script>
+
+</body>
+
+</html>
