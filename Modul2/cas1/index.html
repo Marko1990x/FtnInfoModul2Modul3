@@ -397,8 +397,9 @@ int main(void){
         console.log("njegova varianta 13 zadatak pocetak");
         var niz_decimalnih = [0.1, 0.001, 0.4, 0.003];
         var najveci = niz_decimalnih[0];
-        for(var i = 0; i < niz_decimalnih.length; i++){  // okreni uslove za najmanji element // moze se poceti od 1 zato sto
-        // se predpostavlja da je prvi najveci pa nema potrebe da se poredi 0 ti element
+        for (var i = 0; i < niz_decimalnih
+            .length; i++) { // okreni uslove za najmanji element // moze se poceti od 1 zato sto
+            // se predpostavlja da je prvi najveci pa nema potrebe da se poredi 0 ti element
             if (niz_decimalnih[i] > najveci) {
                 najveci = niz_decimalnih[i];
             }
@@ -409,13 +410,13 @@ int main(void){
         console.log("njegova varianta 13 kraj")
         //#endregion
 
- //#region 
- console.log("njegova varianta simetricnog niza pocetak");   // sada je ok provera simetricnosti nizova
- // pogledaj niz_simetrican.lenght -1 -i kada broji elemente od nazad.
-        var niz_simetrican = [2,7,9,9,7,2];
+        //#region 
+        console.log("njegova varianta simetricnog niza pocetak"); // sada je ok provera simetricnosti nizova
+        // pogledaj niz_simetrican.lenght -1 -i kada broji elemente od nazad.
+        var niz_simetrican = [2, 7, 9, 9, 7, 2];
         var simetrican = true;
-        for (var i = 0; i < niz_simetrican.length/2; i++){
-            if(niz_simetrican[i]!= niz_simetrican[niz_simetrican.length-1-i]){
+        for (var i = 0; i < niz_simetrican.length / 2; i++) {
+            if (niz_simetrican[i] != niz_simetrican[niz_simetrican.length - 1 - i]) {
                 //console.log("niz nije simetrican")
                 simetrican = false;
                 break;
@@ -428,40 +429,61 @@ int main(void){
         }
 
         // bolja provera simetricnosti
-//#endregion
+        //#endregion
 
 
- //#region 
- console.log("zadatak 11 njegova varianta pocetak");
+        //#region 
+        console.log("zadatak 11 njegova varianta pocetak");
 
-var matrix = [
-    [1,2,3,0],
-    [4,0,5,6],
-    [0,7,0,9],
-    [0,0,1,0],
-];
+        var matrix = [
+            [1, 2, 3, 0],
+            [4, 0, 5, 6],
+            [0, 7, 0, 9],
+            [0, 0, 1, 0],
+        ];
 
-for (var i = 0; i < 4; i++){  // ovo je brojac za redive i kolene u matricama
-    var brNula = 0;  // ovo ponistava broj nula kada izadje iz unutrasnje petlje
-    // ako hocu da izbrojim sve instance neke vrednosti u matrici onda stavim ovu var izvan obe petlje i onda nece biti ponistene
-    for(var j = 0; j < 4; j++){
-        //console.log(matrix[i][j]);
-        if (matrix[i][j] == 0) {
-            brNula = brNula + 1;
+        for (var i = 0; i < 4; i++) { // ovo je brojac za redive i kolene u matricama
+            var brNula = 0; // ovo ponistava broj nula kada izadje iz unutrasnje petlje
+            // ako hocu da izbrojim sve instance neke vrednosti u matrici onda stavim ovu var izvan obe petlje i onda nece biti ponistene   
+            for (var j = 0; j < 4; j++) {
+                //console.log(matrix[i][j]);
+                if (matrix[i][j] == 0) {
+                    brNula = brNula + 1;
+                }
+            }
+            console.log("br nula za red " + i + " ima ukupno nula " +
+            brNula); // pozicija ovoga je bitna zbog ove 2 for petlje
         }
-    }
-    console.log("br nula za red " + i + " ima ukupno nula " + brNula);    // pozicija ovoga je bitna zbog ove 2 for petlje
-}  
 
-// pogledaj ovo malo kuci kada ima vise for petlja
- console.log("zadatak 11 njegova varianta kraj");
- //#endregion 
+        // pogledaj ovo malo kuci kada ima vise for petlja
+        console.log("zadatak 11 njegova varianta kraj");
+        //#endregion 
 
 
+        //#region 
+        console.log("zadatak 15 njegova varianta pocetak");
 
+        var matrix = [
+            [1, 2, 3, 0],
+            [4, 0, 5, 6],
+            [0, 7, 5, 9],
+            [0, 0, 1, 0],
+        ];
 
+        var najveci = matrix[0][0];   // nalazi najveci element matrice
+        for (var i = 0; i < matrix.length; i++){
+            for (var j = 0; j < matrix[i].length; j++) {
+                if (i == j) {
+                    if (matrix[i][j] > najveci) {
+                        najveci = matrix[i][j]
+                    }
+                }
+            }
+        }
 
-
+        console.log("najveci element matrice je " + najveci); 
+        console.log("zadatak 15 njegova varianta kraj");
+        //#endregion 
     </script>
 
 </body>
