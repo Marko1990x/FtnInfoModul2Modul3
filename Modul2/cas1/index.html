@@ -386,6 +386,49 @@ int main(void){
 
         console.log("kraj zadatka 13 i 14")
         //#endregion
+
+
+
+
+
+
+
+        //#region 
+        console.log("njegova varianta 13 zadatak pocetak");
+        var niz_decimalnih = [0.1, 0.001, 0.4, 0.003];
+        var najveci = niz_decimalnih[0];
+        for(var i = 0; i < niz_decimalnih.length; i++){  // okreni uslove za najmanji element // moze se poceti od 1 zato sto
+        // se predpostavlja da je prvi najveci pa nema potrebe da se poredi 0 ti element
+            if (niz_decimalnih[i] > najveci) {
+                najveci = niz_decimalnih[i];
+            }
+        }
+
+
+        console.log("najveci element u nizu decimmalnih je + " + najveci);
+        console.log("njegova varianta 13 kraj")
+        //#endregion
+
+ //#region 
+ console.log("njegova varianta simetricnog niza pocetak");   // sada je ok provera simetricnosti nizova
+ // pogledaj niz_simetrican.lenght -1 -i kada broji elemente od nazad.
+        var niz_simetrican = [2,7,9,9,7,2];
+        var simetrican = true;
+        for (var i = 0; i < niz_simetrican.length/2; i++){
+            if(niz_simetrican[i]!= niz_simetrican[niz_simetrican.length-1-i]){
+                //console.log("niz nije simetrican")
+                simetrican = false;
+                break;
+            }
+        }
+        if (simetrican == true) {
+            console.log("simetrican je = " + simetrican);
+        } else {
+            console.log("simetrican je = " + simetrican);
+        }
+
+        // bolja provera simetricnosti
+//#endregion
     </script>
 
 </body>
