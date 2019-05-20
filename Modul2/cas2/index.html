@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Marko zadaci 2</title>
 </head>
 
 <body>
@@ -120,19 +120,246 @@
         var benzin = [];
         var dizel = [];
 
-        for (var i = 0; i < automobili.length; i++){
+        for (var i = 0; i < automobili.length; i++) {
             if (automobili[i][1] == "b") {
                 benzin.push(automobili[i][0]);
-            }else if (automobili[i][1]== "d"){
+            } else if (automobili[i][1] == "d") {
                 dizel.push(automobili[i][0]);
             }
 
         }
 
+
+
         console.log("ovo su automobili na benzinu " + benzin);
         console.log("ovo su automobili na dizelu " + dizel);
 
         console.log("zadatak 3 kraj");
+        //#endregion
+
+
+
+
+        //#region 
+        console.log("zadatak 4 pocetak"); // moje resenje 
+        var zaposleni = [
+            ["pera", "jova", "marko"],
+            [28, 31, 19]
+        ];
+
+        for (var i = 0; i < zaposleni[0].length; i++) {
+            console.log("ovo je: " + zaposleni[0][i] + " on ima ukupno godina: " + zaposleni[1][i]);
+        }
+
+        /* njihova 2 resenja ovog zadatka isto kao moje
+        for (var j = 0; j < 3; j++) {
+    console.log("Zaposleni: " + zaposleni[0][j] + ", ima godina: " + zaposleni[1][j]);
+}
+
+
+//Drugi nacin
+for (var j = 0; j < zaposleni[0].length; j++) {
+    console.log("Zaposleni: " + zaposleni[0][j] + ", ima godina: " + zaposleni[1][j]);
+}
+
+         */
+
+        console.log("zadatak 4 kraj");
+        //#endregion
+
+
+        //#region 
+        console.log("zadatak 5 pocetak");
+
+
+        var zaposleni = [
+            ["pera", "jova", "marko"],
+            [28, 31, 19]
+        ];
+
+        for (var i = 0; i < zaposleni[0].length; i++) {
+            if (zaposleni[0][i] == "jova") {
+                console.log("ovo je: " + zaposleni[0][i] + " on ima ukupno godina: " + zaposleni[1][i]);
+            }
+
+
+        }
+
+        /*
+        for (var i = 0; i < 2; i++) {
+    for (var j = 0; j < 3; j++) {
+        if (zaposleni[i][j] == "jova") {
+            console.log("Jova ima " + zaposleni[i+1][j] + ", godina");
+        }
+    }
+}   njihovo resenje
+        */
+
+
+        console.log("zadatak 5 kraj");
+        //#endregion
+
+
+        //#region 
+        console.log("zadatak 6 pocetak");
+
+
+        var zaposleni = [
+            ["pera", "jova", "marko"],
+            [28, 31, 19]
+        ];
+
+        var srVrednost = [];
+
+        var ukupanBr = 0;
+
+        for (var i = 0; i < zaposleni[0].length; i++) {
+            //   srVrednost.push(zaposleni[1][i]); pushed to row but easier to just add the values here
+            ukupanBr = ukupanBr + zaposleni[1][i];
+            console.log(ukupanBr + " ukupan broj godina zaposlenih");
+        }
+
+        console.log("srednja vrednost godina zaposlenih " + ukupanBr / zaposleni[1].length);
+
+        console.log("novi niz godina: " + srVrednost);
+
+
+        /*
+        var ukupno = 0;
+for (var i = 0; i < 2; i++) {
+    for (var j = 0; j < 3; j++) {
+        if (i == 1) {
+            // Kako bi ovo uradili drugacije?
+            ukupno += zaposleni[i][j];
+        }
+    }
+}
+    njihovo resenje
+         */
+
+        console.log("zadatak 6 kraj");
+        //#endregion
+
+
+
+        //#region 
+        console.log("zadatak 7 pocetak");
+
+        var zaposleni = [
+            ["pera", "jova", "marko"],
+            [28, 31, 39],
+            ["inzenjer", "tehnicar", "doktor"],
+            [700, 0, 0]
+        ];
+
+        var a = zaposleni[3][0] // 700
+
+        zaposleni[3][1] = a * 0.70; // plata tehnicara
+        zaposleni[3][2] = zaposleni[3][1] + (a / 2); // plata doktora
+        console.log(zaposleni);
+
+        for (var i = 0; i < zaposleni[0].length; i++) {
+            console.log("Ime zaposlenog: " + zaposleni[0][i] + " godine zapslenog: " + zaposleni[1][i] +
+                " radna pozicija zaposlenog: " + zaposleni[2][i] + " plata zaposlenog: " + zaposleni[3][i]);
+        } // moje resenje 
+
+        /*
+        njihovo resenje je losije
+
+        var zaposleni = [
+  ["pera",      "jova",     "marko"],
+  [28,          31,         39],
+  ["inzenjer",  "tehnicar", "doktor"],
+  [700,         0,        0]
+];
+
+
+// Zadatak 7
+// Za zadate zaposlene izracunati i podesiti plate ostalih zaposlenih tako da:
+// tehnicar ima 70% plate inzenjera
+// a doktor ima platu tehnicara + pola plate inzenjera
+// nakon toga proci kroz zaposlene i ispisati sve zaposlene, njihove radne pozicije i njihove plate
+
+var plata_tehnicar = -1;
+var plata_doktor = -1;
+var plata_inzenjer = -1;
+
+for (var i = 0; i < zaposleni.length; i++) {
+    for (var j = 0; j < zaposleni[i].length; j++) {
+        // console.log(zaposleni[i][j]);
+        if (zaposleni[i][j] == "inzenjer") {
+            plata_inzenjer = zaposleni[i+1][j];
+            plata_tehnicar = plata_inzenjer * 0.7;
+            plata_doktor = plata_tehnicar + (plata_inzenjer * 0.5);
+        }
+    }
+}
+
+
+for (var i = 0; i < zaposleni.length; i++) {
+    for (var j = 0; j < zaposleni[i].length; j++) {
+        // console.log(zaposleni[i][j]);
+        if (zaposleni[i][j] == "tehnicar") {
+            zaposleni[i+1][j] = plata_tehnicar;
+        }
+        if (zaposleni[i][j] == "doktor") {
+            zaposleni[i+1][j] = plata_doktor;
+        }
+    }
+}
+
+
+for (var i = 0; i < zaposleni[0].length; i++) {
+        console.log(zaposleni[0][i] + " je " + zaposleni[2][i] + " i ima platu od " + zaposleni[3][i]);   
+}
+
+
+
+var zaposleni = [
+  ["pera",      "jova",     "marko"],
+  [28,          31,         39],
+  ["inzenjer",  "tehnicar", "doktor"],
+  [700,         0,        0]
+];
+         */
+
+
+        console.log("zadatak 7 kraj");
+        //#endregion
+
+        //#region 
+        console.log("zadatak 8 pocetak");
+
+        var d = new Date();
+        var godina = d.getFullYear();
+        console.log(d + "\n" + "\n", "godina: " + godina)
+        var zaposleniX = [
+            ["pera", "jova", "marko"],
+            [28, 31, 39],
+            ["inzenjer", "tehnicar", "doktor"],
+            [700, 490, 840],
+            [godina - 28, godina - 31, godina - 39],
+        ]; // uradio sam na jednostavniji nacin xd
+
+        console.log(zaposleniX);
+
+        /*
+        var d = new Date();
+console.log("Godina je " + d.getFullYear());
+
+var godista = [];
+for (var i = 0; i < zaposleni[1].length; i++) {
+    var g = zaposleni[1][i];
+    godista.push(d.getFullYear() - g);
+}
+
+console.log(godista);
+
+zaposleni.push(godista);
+console.log(zaposleni);
+        */
+
+        console.log("zadatak 8 kraj");
         //#endregion
     </script>
 
