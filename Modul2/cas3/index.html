@@ -75,6 +75,24 @@
         //#endregion
 
         //#region 
+        console.log("pocetak zadatka 2 alternativa ");
+
+        function spoji(par1,par2) {   // primer sa substringovima
+            var x = par1.substring(0,3);
+            var y = par2.substring(par2.length - 3);
+            var rez = x + x + y ;
+            return rez;
+        }
+
+        var rezultat = spoji("abcdef", "ghijkl");
+        console.log(rezultat);
+        
+        // njegova alternativa  
+
+        console.log("kraj zadatka 2 alternativa");
+        //#endregion
+
+        //#region 
         console.log("pocetak zadatka 3");
 
         function akronim(a) { // ovo treba da bude u for petlji
@@ -168,7 +186,8 @@
             console.log(drz[1]);
 
             for(var i = 0; i < gra.length; i++){
-                //console.log(gra[i][1]); brojevi gradova
+                //console.log(drz[gra[i][1]]);// brojevi gradova // pogledaj ovo kasnije
+
                 if (gra[i][1] == 3) {
                     console.log("ovo je grad " + gra[i][0] +" "+ drz[3]);
                 }
@@ -182,8 +201,6 @@
                     console.log("ovo je grad " + gra[i][0] +" "+ drz[4]);
                 }
             }
-
-
         }
 
         drzaveX(drzave, gradovi)
