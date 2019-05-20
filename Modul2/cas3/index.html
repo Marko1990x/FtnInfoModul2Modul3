@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Marko zadaci 3</title>
 </head>
+
 <body>
 
     <p>check console</p>
 
     <script>
-
-
         // bitno return vrednost koristis tako sto kazes var nesto pri pozivu funkcije i onda se return smesta u promenjivu koju smo stavili.
 
 
         //#region   
-        console.log("pocetak zadatka 1");  // sada je ok   
+        console.log("pocetak zadatka 1"); // sada je ok   
 
         var imena = [];
         var prezimena = [];
         var res = [];
 
-        function f1(ime, imena, prezimena) {  // niz mora da bude izvan funkcije
-          //  console.log(ime);
+        function f1(ime, imena, prezimena) { // niz mora da bude izvan funkcije
+            //  console.log(ime);
             res = ime.split("I");
             //console.log(res);
             imena.push(res[0]);
             prezimena.push(res[1]);
 
-        }        
+        }
 
         f1("markoImarko1000ccc", imena, prezimena);
         f1("nikolaInikolic10112", imena, prezimena);
@@ -40,8 +40,8 @@
         console.log(prezimena);
 
         function forLoop1(ime, sifre) {
-            for(var i = 0; i < imena.length; i++){
-                console.log("Ime korisnika: " + ime[i]+  +"\n"+"\n"+"\n" +" sifra korisnika: " + sifre[i]);
+            for (var i = 0; i < imena.length; i++) {
+                console.log("Ime korisnika: " + ime[i] + +"\n" + "\n" + "\n" + " sifra korisnika: " + sifre[i]);
             }
         }
 
@@ -51,15 +51,15 @@
         //#endregion
 
         //#region 
-        console.log("pocetak zadatka 2");   // ok
+        console.log("pocetak zadatka 2"); // ok
 
-        var string1 = "abcdef";   // koristi substring pri resenju ovog zadatka
+        var string1 = "abcdef"; // koristi substring pri resenju ovog zadatka
         var string2 = "ghijkl";
         var string3 = "";
 
         function noviString(a, b) {
-           var z = a.split("d");
-           var y = b.split("i");
+            var z = a.split("d");
+            var y = b.split("i");
 
             console.log(z[0]);
             console.log(y[1]);
@@ -77,35 +77,121 @@
         //#region 
         console.log("pocetak zadatka 3");
 
-        function akronim(a) {   // ovo treba da bude u for petlji
+        function akronim(a) { // ovo treba da bude u for petlji
             var x = a.split(" ");
-            console.log(x[0] + "\n " +  x[1] + " \n " +x[2]);  // mkays
+            console.log(x[0] + "\n " + x[1] + " \n " + x[2]); // mkays
             var akronim = x[0][0] + x[1][0] + x[2][0];
             console.log("akronim je " + akronim.toUpperCase());
         }
 
         akronim("random access memory");
-        akronim("fakultet tehnickih nauka novi sad");    
+        akronim("fakultet tehnickih nauka novi sad");
         console.log("kraj zadatka 3");
         //#endregion
 
         //#region 
+        console.log("pocetak zadatka 3 varianta 2 ");
+
+        var akronimNiz = []; // ovo je moja druga varianta sa for petljom sa nizom
+        function akronim2(a) {
+            var x = a.split(" ");
+            console.log(x.length);
+            for (var i = 0; i < x.length; i++) {
+                var ackronimX = x[i][0];
+                akronimNiz.push(ackronimX);
+            }
+            console.log(akronimNiz);
+        }
+
+        function akronim3(a) {
+            var x = a.split(" ");
+            var akronim1 = "";
+            console.log(x.length);
+            for (var i = 0; i < x.length; i++) {
+                akronim1 += x[i][0];
+                //akronimNiz.push(ackronimX);
+            }
+            console.log(akronim1);
+        }
+
+        //akronim2("fakultet tehnickih nauka novi sad");
+        akronim2("ovo je drugo resenje ovog zadatka");
+        akronim3("ovo je resenje trece variante akronim funkcije");
+
+        console.log("kraj zadatka 3 varianta 2");
+        //#endregion
+
+        //#region 
         console.log("pocetak zadatka 4");
+
+        var ocene = [8, 7, 6, 9, 8, 10, 8];
+        var ime_prez = ["Marko", "Markovic"];
+
+
+        function prosek(a, b) {
+            var srVrednost = 0;
+            //console.log(b[0] + b[1]);
+            for (var i = 0; i < ocene.length; i++) {
+                srVrednost = srVrednost + a[i];
+            }
+
+            var prosek = srVrednost / a.length;
+
+            console.log("student sa imenom: " + b[0] + " i sa prezimenom " + b[1] + " ima ukupan broj bodova: " +
+                srVrednost + " pri cemu njegova prosecna ocena je: " + prosek);
+            //console.log("ukupan broj je: " + srVrednost + " prosek je " + prosek);
+        }
+
+        prosek(ocene, ime_prez);
+
         console.log("kraj zadatka 4");
         //#endregion
 
         //#region 
-        console.log("pocetak zadatka 5");
+        console.log("pocetak zadatka 5");   // uradjen peti zadatak na moj nacin
+
+        var drzave = {  // objekat
+            1: "RS",
+            2: "RU",
+            3: "UK",
+            4: "ESP"
+        };
+        var gradovi = [
+            ["London", 3],
+            ["Novi Sad", 1],
+            ["Moskva", 2],
+            ["Madrid", 4]
+        ];
+
+        function drzaveX(drz, gra) {
+            console.log(drz, drz.length, gra, gra.length);
+            console.log(drz[1]);
+
+            for(var i = 0; i < gra.length; i++){
+                //console.log(gra[i][1]); brojevi gradova
+                if (gra[i][1] == 3) {
+                    console.log("ovo je grad " + gra[i][0] +" "+ drz[3]);
+                }
+                if (gra[i][1] == 1) {
+                    console.log("ovo je grad " + gra[i][0] +" "+ drz[1]);
+                }
+                if (gra[i][1] == 2) {
+                    console.log("ovo je grad " + gra[i][0] +" "+ drz[2]);
+                }
+                if (gra[i][1] == 4) {
+                    console.log("ovo je grad " + gra[i][0] +" "+ drz[4]);
+                }
+            }
+
+
+        }
+
+        drzaveX(drzave, gradovi)
+
         console.log("kraj zadatka 5");
         //#endregion
-
-        //#region 
-        console.log("pocetak zadatka 6");
-        console.log("kraj zadatka 6");
-        //#endregion
-
-
     </script>
-    
+
 </body>
+
 </html>
