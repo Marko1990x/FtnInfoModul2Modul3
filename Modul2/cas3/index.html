@@ -121,15 +121,15 @@
             console.log(akronimNiz);
         }
 
-        function akronim3(a) {
+        function akronim3(a) {  // kaze da slova moraju biti inicializovana na "" string da nemoze nista
             var x = a.split(" ");
             var akronim1 = "";
             console.log(x.length);
             for (var i = 0; i < x.length; i++) {
-                akronim1 += x[i][0];
+                akronim1 += x[i][0];   // mogao sam koristiti i substring x[i].substring(0,1)
                 //akronimNiz.push(ackronimX);
             }
-            console.log(akronim1);
+            console.log(akronim1);   // moglo je biti i retrun console.log(akronim) sa ver nesto = poziv funkcije
         }
 
         //akronim2("fakultet tehnickih nauka novi sad");
