@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marko zadatak 3 rad na casu</title>
+</head>
+<body>
+
+    <p>poozdrav</p>
+
+    <script>    // pogledaj overloading metode ne postoje u javascriptu
+
+        function pozdrav(a) {   // ovaj parametar je lokalna promenjiva za funkciju
+            console.log(a);
+        }
+
+        pozdrav("pozdrav iz funkcije");
+
+
+        function name() {   // funkcija bez parametara i povratne vrednosti
+            console.log("pozdrav 2")
+        }
+
+        name();
+
+        // funkcija sa povratnom vrednosti
+
+        function saberi() {
+            return 2 +3 ;
+        }
+
+        var  rezultat = saberi()
+        console.log(rezultat);
+
+        // funkcija sa parametrom i povratnom vrednoscu 
+
+        function saberiParam(prvi, drugi) {
+            return prvi + drugi;
+        }
+
+        var rez = saberiParam(4,6);   // primer za uzimanje return vrednosti
+        console.log(rez);
+
+
+        var x = "pera"
+
+        // backtick je na alt gr 7
+
+        function cestitka(name) {
+            document.write("happy birthday to you <br>")
+            document.write("happy birthday to you <br>")
+            document.write("happy birthday to dear " + name + "<br>")
+            document.write(`happy birthday to dear ${x} <br>`)  // backtick string u string
+            document.write("happy birthday to you <br>")
+        }
+
+        cestitka(x);
+
+
+    </script>
+    
+</body>
+</html>

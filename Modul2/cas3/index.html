@@ -7,6 +7,105 @@
     <title>Marko zadaci 3</title>
 </head>
 <body>
+
+    <p>check console</p>
+
+    <script>
+
+
+        // bitno return vrednost koristis tako sto kazes var nesto pri pozivu funkcije i onda se return smesta u promenjivu koju smo stavili.
+
+
+        //#region   
+        console.log("pocetak zadatka 1");  // sada je ok   
+
+        var imena = [];
+        var prezimena = [];
+        var res = [];
+
+        function f1(ime, imena, prezimena) {  // niz mora da bude izvan funkcije
+          //  console.log(ime);
+            res = ime.split("I");
+            //console.log(res);
+            imena.push(res[0]);
+            prezimena.push(res[1]);
+
+        }        
+
+        f1("markoImarko1000ccc", imena, prezimena);
+        f1("nikolaInikolic10112", imena, prezimena);
+        f1("damjanIdamjanovic1999", imena, prezimena);
+
+        console.log(imena);
+        console.log(prezimena);
+
+        function forLoop1(ime, sifre) {
+            for(var i = 0; i < imena.length; i++){
+                console.log("Ime korisnika: " + ime[i]+  +"\n"+"\n"+"\n" +" sifra korisnika: " + sifre[i]);
+            }
+        }
+
+        forLoop1(imena, prezimena);
+
+        console.log("kraj zadatka 1");
+        //#endregion
+
+        //#region 
+        console.log("pocetak zadatka 2");   // ok
+
+        var string1 = "abcdef";   // koristi substring pri resenju ovog zadatka
+        var string2 = "ghijkl";
+        var string3 = "";
+
+        function noviString(a, b) {
+           var z = a.split("d");
+           var y = b.split("i");
+
+            console.log(z[0]);
+            console.log(y[1]);
+
+            string3 = z[0] + y[1];
+            console.log("novi spojen string je: " + string3);
+        }
+
+        noviString(string1, string2);
+
+
+        console.log("kraj zadatka 2");
+        //#endregion
+
+        //#region 
+        console.log("pocetak zadatka 3");
+
+        function akronim(a) {   // ovo treba da bude u for petlji
+            var x = a.split(" ");
+            console.log(x[0] + "\n " +  x[1] + " \n " +x[2]);  // mkays
+            var akronim = x[0][0] + x[1][0] + x[2][0];
+            console.log("akronim je " + akronim.toUpperCase());
+        }
+
+        akronim("random access memory");
+        akronim("fakultet tehnickih nauka novi sad");    
+        console.log("kraj zadatka 3");
+        //#endregion
+
+        //#region 
+        console.log("pocetak zadatka 4");
+        console.log("kraj zadatka 4");
+        //#endregion
+
+        //#region 
+        console.log("pocetak zadatka 5");
+        console.log("kraj zadatka 5");
+        //#endregion
+
+        //#region 
+        console.log("pocetak zadatka 6");
+        console.log("kraj zadatka 6");
+        //#endregion
+
+
+    </script>
     
 </body>
 </html>
