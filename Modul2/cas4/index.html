@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marko cas 4</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+
+    <div id="wrapper1">
+        <div id="wrapper2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid a facere, neque assumenda necessitatibus
+                cum eveniet, error magnam, temporibus culpa optio impedit quo ipsum veniam consequatur reprehenderit
+                quae. Omnis, voluptatum!</p>
+
+            <div>
+                <p id="ichi"></p>
+                <p id="druga"></p>
+                <p id="III"></p>
+                <p id="IV"></p>
+                <p id="V"></p>
+            </div>
+
+
+            <p id="filltext">
+            </p>
+        </div>
+    </div>
+
+
+    <script>
+        document.getElementById("ichi").innerHTML = "Click Me Z1 !";
+        document.getElementById("druga").innerHTML = "Click Me Z2 !";
+        document.getElementById("III").innerHTML = "Click Me Z3 !";
+        document.getElementById("IV").innerHTML = "Click Me Z4 !";
+        document.getElementById("V").innerHTML = "Click Me Z5 !";
+        document.getElementById("filltext").hidden = true;
+        document.getElementById("ichi").addEventListener("click", function () { // mkay
+            console.log("i have been clicked")
+            document.getElementById("filltext").hidden = false;
+            document.getElementById("filltext").innerHTML = "Hello World from marko :) !";
+        });
+
+
+        function II() {
+           var x = prompta();
+           console.log(x + " check 2");
+           document.getElementById("filltext").hidden = false;
+           document.getElementById("filltext").innerHTML = "Hello! " + x[0] + " " + x[1] + " !";
+        }
+        function prompta() {
+            var z = [prompt("unesite ime"), prompt("unesite prezime")];
+            console.log(z + " check 1");
+            return z;
+        }
+
+        document.getElementById("druga").addEventListener("click", II);
+
+
+    </script>
+</body>
+
+</html>

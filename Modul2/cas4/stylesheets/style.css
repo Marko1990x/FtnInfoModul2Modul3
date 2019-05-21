@@ -1,0 +1,57 @@
+#wrapper1 {
+  background-color: orange;
+  min-height: 300px;
+  min-width: 100%;
+  border: 1px solid black;
+}
+#wrapper1 #wrapper2 {
+  background-color: lightblue;
+  width: 80%;
+  margin: 1em auto;
+  min-height: inherit;
+  border: inherit;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px black;
+  animation-name: boxshadow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  text-align: center;
+}
+#wrapper1 #wrapper2 div #ichi, #wrapper1 #wrapper2 div #druga, #wrapper1 #wrapper2 div #III, #wrapper1 #wrapper2 div #IV, #wrapper1 #wrapper2 div #V {
+  width: fit-content;
+  height: 30px;
+  color: red;
+  border: 1px solid black;
+  background-color: midnightblue;
+  border-radius: 5px;
+  margin: 0% auto;
+  animation-name: boxshadow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  padding: 5px;
+  display: inline-block;
+}
+#wrapper1 #wrapper2 #filltext {
+  height: fit-content;
+  width: 95%;
+  margin: 1em auto;
+  border-radius: 5px;
+  background-color: lightslategrey;
+}
+
+@keyframes boxshadow {
+  0% {
+    color: orange;
+    box-shadow: 5px 5px 5px orangered;
+  }
+  50% {
+    color: orangered;
+    box-shadow: 5px 5px 5px indigo;
+  }
+  100% {
+    color: orange;
+    box-shadow: 5px 5px 5px orangered;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
