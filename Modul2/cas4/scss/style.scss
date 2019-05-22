@@ -35,13 +35,18 @@
         }
 
 
-        #filltext {
+        #filltext, #secret {
             height: fit-content;
             width: 95%;
             margin: 1em auto;
             border-radius: 5px;
             background-color: lightslategrey;
 
+        }
+
+        #selected{
+            margin: 1em auto;
+            color: red;
         }
     }
 }

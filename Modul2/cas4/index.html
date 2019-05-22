@@ -25,9 +25,19 @@
                 <p id="V"></p>
             </div>
 
+            <select id="selected">
+                <option>Z3 Option 1</option>
+                <option>Z3 Option 2</option>
+                <option>Z3 Option 3</option>
+                <option>Z3 Option 4</option>
+            </select>
+
 
             <p id="filltext">
             </p>
+
+            <h2 id="secret">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo enim, impedit inventore nam ab ipsa?</h2>
+
         </div>
     </div>
 
@@ -35,23 +45,29 @@
     <script>
         document.getElementById("ichi").innerHTML = "Click Me Z1 !";
         document.getElementById("druga").innerHTML = "Click Me Z2 !";
-        document.getElementById("III").innerHTML = "Click Me Z3 !";
-        document.getElementById("IV").innerHTML = "Click Me Z4 !";
+        document.getElementById("III").innerHTML = "Z3! Copy";
+        document.getElementById("IV").innerHTML = "Z3! Show secret!";
         document.getElementById("V").innerHTML = "Click Me Z5 !";
         document.getElementById("filltext").hidden = true;
+        document.getElementById("secret").hidden = true;
+
+        //#region // zadatak 1
         document.getElementById("ichi").addEventListener("click", function () { // mkay
             console.log("i have been clicked")
             document.getElementById("filltext").hidden = false;
             document.getElementById("filltext").innerHTML = "Hello World from marko :) !";
         });
 
+        //#endregion
 
+        //#region   // zadatak 2 
         function II() {
-           var x = prompta();
-           console.log(x + " check 2");
-           document.getElementById("filltext").hidden = false;
-           document.getElementById("filltext").innerHTML = "Hello! " + x[0] + " " + x[1] + " !";
+            var x = prompta();
+            console.log(x + " check 2");
+            document.getElementById("filltext").hidden = false;
+            document.getElementById("filltext").innerHTML = "Hello! " + x[0] + " " + x[1] + " !";
         }
+
         function prompta() {
             var z = [prompt("unesite ime"), prompt("unesite prezime")];
             console.log(z + " check 1");
@@ -59,6 +75,78 @@
         }
 
         document.getElementById("druga").addEventListener("click", II);
+
+        //#endregion
+
+        //#region // pocetak zadatka 3   // urajen zadatak 3 
+
+        document.getElementById("selected").addEventListener("click", function opt1() {
+            if (document.getElementById("selected").selectedIndex == "0") {
+                console.log("izabrana je opcija sa indexom " + document.getElementById("selected")
+                    .selectedIndex);
+
+                var a = ("izabrana je opcija sa indexom " + document.getElementById("selected")
+                    .selectedIndex);
+
+                document.getElementById("filltext").hidden = false;
+                document.getElementById("filltext").innerHTML = a;
+            }
+            if (document.getElementById("selected").selectedIndex == "1") {
+                console.log("izabrana je opcija sa indexom " + document.getElementById("selected")
+                    .selectedIndex);
+
+                var a = ("izabrana je opcija sa indexom " + document.getElementById("selected")
+                    .selectedIndex);
+
+                document.getElementById("filltext").hidden = false;
+                document.getElementById("filltext").innerHTML = a;
+            }
+            if (document.getElementById("selected").selectedIndex == "2") {
+                console.log("izabrana je opcija sa indexom " + document.getElementById("selected")
+                    .selectedIndex);
+
+                var a = ("izabrana je opcija sa indexom " + document.getElementById("selected")
+                    .selectedIndex);
+
+                document.getElementById("filltext").hidden = false;
+                document.getElementById("filltext").innerHTML = a;
+            }
+            if (document.getElementById("selected").selectedIndex == "3") {
+                console.log("izabrana je opcija sa indexom " + document.getElementById("selected")
+                    .selectedIndex);
+
+                var a = ("izabrana je opcija sa indexom " + document.getElementById("selected")
+                    .selectedIndex);
+
+                document.getElementById("filltext").hidden = false;
+                document.getElementById("filltext").innerHTML = a;
+            }
+        })
+
+        //#endregion // krajzadatka 3
+
+        //#region zadatak 3 varianta b
+
+        // pitanje kako da izvucem povratnu vrednost kod anonimnih funkcija
+    
+        document.getElementById("III").addEventListener("click", function copy() {
+            var asd = "";
+            asd = document.getElementById("filltext").innerHTML;
+            if (asd == 0) {
+                alert("empty string pick an option bellow then copy");
+            }else{
+                document.getElementById("secret").innerHTML = "ovo je secret " + asd;
+            }
+        })
+
+        document.getElementById("IV").addEventListener("click", function () { 
+            document.getElementById("secret").hidden = false;
+         })
+
+        //#endregion // kraj zadatka 3 variante b
+
+
+
 
 
     </script>

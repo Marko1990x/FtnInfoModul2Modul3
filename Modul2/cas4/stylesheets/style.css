@@ -31,12 +31,16 @@
   padding: 5px;
   display: inline-block;
 }
-#wrapper1 #wrapper2 #filltext {
+#wrapper1 #wrapper2 #filltext, #wrapper1 #wrapper2 #secret {
   height: fit-content;
   width: 95%;
   margin: 1em auto;
   border-radius: 5px;
   background-color: lightslategrey;
+}
+#wrapper1 #wrapper2 #selected {
+  margin: 1em auto;
+  color: red;
 }
 
 @keyframes boxshadow {
