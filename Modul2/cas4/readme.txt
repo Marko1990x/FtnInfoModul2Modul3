@@ -6,6 +6,10 @@ https://www.w3schools.com/js/js_object_definition.asp
 
 objekti se guraju u niz podataka json
 
+razlika izmedju innerHtml and value 
+https://stackoverflow.com/questions/31225901/difference-between-innerhtml-and-value-in-js
+
+
 var person = {
   firstName: "John",
   lastName: "Doe",
