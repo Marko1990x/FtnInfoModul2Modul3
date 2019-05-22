@@ -30,6 +30,11 @@
                 <option>Z3 Option 4</option>
             </select>
 
+            <select name="cars" id="cars">
+                <option>Motorno</option>
+                <option>Elektricno</option>
+            </select>
+
 
             <p id="filltext">
             </p>
@@ -266,11 +271,11 @@
 
             if (finalCheck1 == true && finalCheck2 == true && finalCheck3 == true && finalCheck41 == true &&
                 finalCheck5 == true) {
-                    alert("final verifcation has passed, data has been passed as object to console.");
-                    var a1 = [a,b];
-                    var a2 = [c];
-                    var a3 = [d,e];
-                    console.log(a1 + "\n" + a2 + "\n" + a3 + "\n");
+                alert("final verifcation has passed, data has been passed as object to console.");
+                var a1 = [a, b];
+                var a2 = [c];
+                var a3 = [d, e];
+                console.log(a1 + "\n" + a2 + "\n" + a3 + "\n");
 
             } else {
                 alert("final verifcation check has failed try again");
@@ -289,6 +294,33 @@
         document.getElementById("V").addEventListener("click", callOthers);
 
         //#endregion kraj zadatka 4
+
+
+        //#region  zadatak 4.3
+        document.getElementById("cars").addEventListener("mouseenter", function () {
+            document.getElementById("filltext").hidden = false;
+            document.getElementById("filltext").innerHTML = "Zadatak4.3 : Eko Klasa";
+        })
+        document.getElementById("cars").addEventListener("mouseleave", function () {
+            document.getElementById("filltext").innerHTML = "";
+            document.getElementById("filltext").hidden = true;
+
+        })
+
+        document.getElementById("cars").addEventListener("click", function () {
+            if (document.getElementById("cars").selectedIndex == 0) {
+                document.getElementById("filltext").hidden = false;
+                document.getElementById("filltext").innerHTML = "Zadatak 4 Eko Klasa Motorna Vozila";
+                document.getElementById("filltext").style.backgroundColor = "red";
+            }
+            if (document.getElementById("cars").selectedIndex == 1) {
+                document.getElementById("filltext").hidden = false;
+                document.getElementById("filltext").innerHTML = "Zadatak 4 Eko Klasa Elektricna Vozila";
+                document.getElementById("filltext").style.backgroundColor = "green";
+            }
+        })
+
+        //#endregion
     </script>
 </body>
 
