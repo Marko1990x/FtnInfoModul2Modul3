@@ -13,16 +13,14 @@
 
     <div id="wrapper1">
         <div id="wrapper2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid a facere, neque assumenda necessitatibus
-                cum eveniet, error magnam, temporibus culpa optio impedit quo ipsum veniam consequatur reprehenderit
-                quae. Omnis, voluptatum!</p>
+            <p>Homework 4</p>
 
             <div>
-                <p id="ichi"></p>
-                <p id="druga"></p>
-                <p id="III"></p>
-                <p id="IV"></p>
-                <p id="V"></p>
+                <p id="ichi" tabindex="6"></p>
+                <p id="druga" tabindex="7"></p>
+                <p id="III" tabindex="8"></p>
+                <p id="IV" tabindex="9"></p>
+                <p id="V" tabindex="10"></p>
             </div>
 
             <select id="selected">
@@ -36,7 +34,32 @@
             <p id="filltext">
             </p>
 
-            <h2 id="secret">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo enim, impedit inventore nam ab ipsa?</h2>
+            <h2 id="secret">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo enim, impedit inventore nam ab
+                ipsa?</h2>
+
+            <div id="form">
+                <div>
+                    <p>Name:</p>
+                    <input type="text" tabindex="1" id="name">
+                </div>
+                <div>
+                    <p>Last Name:</p>
+                    <input type="text" tabindex="2" id="lastname">
+                </div>
+                <div>
+                    <p>JMBG:</p>
+                    <input type="text" tabindex="3" id="jmbg">
+                </div>
+                <div>
+                    <p>e-mail</p>
+                    <input type="text" tabindex="4" id="email">
+                </div>
+
+                <div>
+                    <textarea placeholder="your message goes here" name="textarea" id="txt1" cols="20" rows="10"
+                        tabindex="5" id="textarea"></textarea>
+                </div>
+            </div>
 
         </div>
     </div>
@@ -47,7 +70,7 @@
         document.getElementById("druga").innerHTML = "Click Me Z2 !";
         document.getElementById("III").innerHTML = "Z3! Copy";
         document.getElementById("IV").innerHTML = "Z3! Show secret!";
-        document.getElementById("V").innerHTML = "Click Me Z5 !";
+        document.getElementById("V").innerHTML = "Submit Form";
         document.getElementById("filltext").hidden = true;
         document.getElementById("secret").hidden = true;
 
@@ -128,28 +151,72 @@
         //#region zadatak 3 varianta b
 
         // pitanje kako da izvucem povratnu vrednost kod anonimnih funkcija
-    
+
         document.getElementById("III").addEventListener("click", function copy() {
             var asd = "";
             asd = document.getElementById("filltext").innerHTML;
             if (asd == 0) {
                 alert("empty string pick an option bellow then copy");
-            }else{
+            } else {
                 document.getElementById("secret").innerHTML = "ovo je secret " + asd;
             }
         })
 
-        document.getElementById("IV").addEventListener("click", function () { 
+        document.getElementById("IV").addEventListener("click", function () {
             document.getElementById("secret").hidden = false;
-         })
+        })
 
         //#endregion // kraj zadatka 3 variante b
+  
+  //#region  // pocetak zadatka 4
+        function checkName(a, b, c) {
+            if (a == "") {
+                alert("name is empty");
+                document.getElementById("name").style.backgroundColor = "red";
+                document.getElementById("name").focus();
+            }else{
+                console.log("name has passed " + a);
+            }
+            if (b == "") {
+                alert("last name is empty");
+                document.getElementById("lastname").style.backgroundColor = "red";
+                document.getElementById("lastname").focus();
+            }else{
+                console.log("last name has passed" + b);
+            }
 
+            var lenght1 = "";
+            lenght1 = c;
+            var finalStringLenght = lenght1.length;
+            console.log(lenght1, finalStringLenght);
 
+            if (c == "") {
+                alert("jmbg is empty");
+                document.getElementById("jmbg").style.backgroundColor = "red";
+                document.getElementById("jmbg").focus();
+            }else if(isNaN(c)){
+                alert("jmbg moze biti samo broj");
+                document.getElementById("jmbg").style.backgroundColor = "red";
+                document.getElementById("jmbg").value = "";
+                document.getElementById("jmbg").focus();
+            }else if(finalStringLenght != 13){
+                alert("jmbg mora imati tacno 13 cifara");
+                document.getElementById("jmbg").style.backgroundColor = "red";
+                document.getElementById("jmbg").value = "";
+                document.getElementById("jmbg").focus();
+            }
+        }
+  
+        function callOthers() {
+            checkName(document.getElementById("name").value, document.getElementById("lastname").value
+            , document.getElementById("jmbg").value);
+        }
 
+        document.getElementById("V").addEventListener("click", callOthers);
+  
+        //#endregion kraj zadatka 4
 
-
-    </script>
+  </script>
 </body>
 
 </html>
