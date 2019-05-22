@@ -70,7 +70,7 @@
         document.getElementById("druga").innerHTML = "Click Me Z2 !";
         document.getElementById("III").innerHTML = "Z3! Copy";
         document.getElementById("IV").innerHTML = "Z3! Show secret!";
-        document.getElementById("V").innerHTML = "Submit Form";
+        document.getElementById("V").innerHTML = "Z4 Submit Form";
         document.getElementById("filltext").hidden = true;
         document.getElementById("secret").hidden = true;
 
@@ -169,7 +169,15 @@
         //#endregion // kraj zadatka 3 variante b
 
         //#region  // pocetak zadatka 4
-        function checkName(a, b, c) {
+        function checkName(a, b, c, d, e) {
+
+            var finalCheck1 = false;
+            var finalCheck2 = false;
+            var finalCheck3 = false;
+            var finalCheck41 = false;
+            var finalCheck5 = false;
+
+
             if (a == "") {
                 alert("name is empty");
                 document.getElementById("name").style.backgroundColor = "red";
@@ -181,19 +189,20 @@
                 document.getElementById("name").focus();
             } else {
                 console.log("name has passed " + a);
+                finalCheck1 = true;
             }
             if (b == "") {
                 alert("last name is empty");
                 document.getElementById("lastname").style.backgroundColor = "red";
                 document.getElementById("lastname").focus();
-            } else if (b[0] != b[0].toUpperCase()){
+            } else if (b[0] != b[0].toUpperCase()) {
                 console.log("First letter in last name is not uppercase");
                 document.getElementById("lastname").style.backgroundColor = "red";
                 document.getElementById("lastname").value = "";
                 document.getElementById("lastname").focus();
-            } 
-            else {
+            } else {
                 console.log("last name has passed " + b);
+                finalCheck2 = true;
             }
 
             var lenght1 = "";
@@ -217,12 +226,64 @@
                 document.getElementById("jmbg").focus();
             } else {
                 console.log("jmbg je prosao provere " + c);
+                finalCheck3 = true;
             }
+
+
+            var email1 = "";
+            email1 = d;
+            var finale = email1.includes("@");
+            var finale2 = email1.includes(".com");
+
+            var finalcheck = false;
+            if (d == "") {
+                alert("email cant be blank");
+                document.getElementById("email").style.backgroundColor = "red";
+                document.getElementById("email").focus();
+            } else if (finale == true && finale2 == true) {
+                console.log("email has passed: " + d)
+                finalcheck = true;
+                finalCheck41 = true;
+            } else {
+                console.log("email has failed: " + d)
+            }
+
+            console.log(finale, finale2, finalcheck);
+
+
+            // console.log(e);
+
+            if (e == "") {
+                alert("text field is empty try again");
+                document.getElementById("txt1").style.backgroundColor = "red";
+                document.getElementById("txt1").value = "";
+                document.getElementById("txt1").focus();
+            } else {
+                console.log("text area has passed " + e);
+                finalCheck5 = true;
+            }
+
+
+            if (finalCheck1 == true && finalCheck2 == true && finalCheck3 == true && finalCheck41 == true &&
+                finalCheck5 == true) {
+                    alert("final verifcation has passed, data has been passed as object to console.");
+                    var a1 = [a,b];
+                    var a2 = [c];
+                    var a3 = [d,e];
+                    console.log(a1 + "\n" + a2 + "\n" + a3 + "\n");
+
+            } else {
+                alert("final verifcation check has failed try again");
+                console.log("check: " + "1: " + finalCheck1 + " 2" + finalCheck2 + " 3 " + finalCheck3 + " 4 " +
+                    finalCheck41 + " 5 " + finalCheck5);
+            }
+
         }
 
         function callOthers() {
             checkName(document.getElementById("name").value, document.getElementById("lastname").value, document
-                .getElementById("jmbg").value);
+                .getElementById("jmbg").value, document.getElementById("email").value,
+                document.getElementById("txt1").value);
         }
 
         document.getElementById("V").addEventListener("click", callOthers);
