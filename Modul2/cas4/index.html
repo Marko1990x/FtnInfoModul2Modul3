@@ -322,6 +322,36 @@
 
         //#endregion
     </script>
+
+    <script>  // rad na casu dodatak    // objekat primer
+
+        var hotel = {
+            naziv: "Hotel Park",
+            adressa: "Nsajma 35",
+            brojSoba: 140,
+            rezervisano: 57,
+            teretana: true,
+            brojSlobodnihSoba: function() {
+                return this.brojSoba - this.rezervisano;
+            },
+            rezervacija: function () {  // dodaj ogranicenje
+                if (this.rezervisano == 140) {
+                    alert("maksimalna vrednost soba");
+                }else{
+                    return this.rezervisano += 1;
+                    console.log("mkay");
+                }
+                
+            }
+        }
+
+        // direktno menjanje atributa  // kada ciljam funkcije onda moram da mu kazem () da je izvrsi i vrati vrednost
+        console.log(hotel, hotel.rezervisano = 60, hotel.brojSlobodnihSoba(), " Metoda rezervacija " + hotel.rezervacija());
+
+    </script>
+
+
+
 </body>
 
 </html>
