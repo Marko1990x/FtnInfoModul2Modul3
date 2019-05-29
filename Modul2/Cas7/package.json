@@ -1,39 +1,39 @@
 {
-  "name": "fedmodul23",
+  "name": "marko1990x.github.io",
   "version": "1.0.0",
-  "description": "rad na casovima modula 2 i 3 fed kursa na ftn info",
-  "main": "index.js",
+  "description": "my personal web site",
+  "main": "gulpfile.js",
   "scripts": {
+    "start": "tsc -p tsconfig.json && node js/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Marko1990x/FtnInfoModul2Modul3.git"
+    "url": "git+https://github.com/Marko1990x/marko1990x.github.io.git"
   },
   "keywords": [
-    "fed",
+    "personal",
+    "website",
     "marko",
-    "rad",
-    "na",
-    "casu",
-    "kurs"
+    "dunovic"
   ],
   "author": "Marko Dunovic",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Marko1990x/FtnInfoModul2Modul3/issues"
+    "url": "https://github.com/Marko1990x/marko1990x.github.io/issues"
   },
-  "homepage": "https://github.com/Marko1990x/FtnInfoModul2Modul3#readme",
+  "homepage": "https://github.com/Marko1990x/marko1990x.github.io#readme",
   "devDependencies": {
     "angular": "^1.7.8",
     "angular-route": "^1.7.8",
     "gulp": "^4.0.0",
     "gulp-browserify": "^0.5.1",
+    "gulp-minify": "^3.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-typescript": "^5.0.0",
-    "typescript": "^3.3.3333",
     "jquery": "^3.3.1",
-    "jquery-ui": "^1.12"
+    "jquery-ui": "^1.12",
+    "typescript": "^3.3.3333"
   },
   "dependencies": {
     "@types/node": "^11.11.4"

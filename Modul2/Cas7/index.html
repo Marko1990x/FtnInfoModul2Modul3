@@ -1,0 +1,83 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="stilovi.css" />
+  <script src="js/jquery-1.11.0.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style type="text/css">
+    p.eco {
+      visibility: hidden;
+      font-size: large;
+      font-weight: bold;
+      color: green
+    }
+
+    p.eco1 {
+      visibility: hidden;
+      font-size: large;
+      font-weight: bold;
+      color: green
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <p id="fill"></p>
+
+  <div class="container">
+    <h2>Produzenje registracije</h2>
+    <form action="Zadatak2.html" method="get" id="forma">
+      <div class="form-group">
+        <label for="ime">Ime:</label>
+        <input type="text" class="form-control" id="ime" name="ime" placeholder="Unesite ime">
+      </div>
+      <div class="form-group">
+        <label for="prezime">Prezime:</label>
+        <input type="text" class="form-control" id="prezime" name="prezime" placeholder="Unesite prezime">
+      </div>
+      <div class="form-group">
+        <label for="jmbg">Jmbg:</label>
+        <input type="text" class="form-control" id="jmbg" name="jmbg" placeholder="Unesite jmbg">
+      </div>
+      <div class="form-group">
+        <label for="registracija">Registracija:</label>
+        <input type="text" class="form-control" id="registracija" name="registracija"
+          placeholder="Unesite registraciju">
+      </div>
+      <button type="submit" name="posalji" class="btn btn-default">Submit</button>
+    </form>
+  </div>
+
+
+  <hr style="border: 3px solid black">
+  <hr>
+
+  <h1>Registrovani korisnici</h1>
+
+  <p>
+    Na ovoj stranici prikazani su korisnici koji su registrovali svoja vozila. <br />
+  </p>
+
+  <table border="1" id="tabela">
+    <tr class="first">
+      <td>Ime</td>
+      <td>Prezime</td>
+      <td>JMBG</td>
+    </tr>
+    <tr class="odd">
+      <td>Petar</td>
+      <td>Petrović</td>
+      <td>123321</td>
+    </tr>
+  </table>
+
+
+  <script src="jsDev/index.js"></script>
+
+</body>
+
+</html>
