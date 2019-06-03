@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marko Dan 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!--treba 7 divova-->
+
+    <div id="wrapper">
+        <div id="header">
+
+            <img src="images/logo.png" alt="logoSlika">
+
+            <div id="menu">
+                <p>Menu</p>
+                <p>Diches</p>
+                <p>About Us</p>
+                <p>Gallery</p>
+            </div>
+
+        </div>
+
+        <div id="drugiDiv">
+
+            <span class="carousel"><img src="images/slider1.jpg" alt="slika1Carousel"></span>
+            <span class="carousel"><img src="images/slider2.jpg" alt="slika2Carousel"></span>
+            <span class="carousel"><img src="images/slider3.jpg" alt="Slika3Carousel"></span>
+            <span class="carousel"><img src="images/slider2.jpg" alt="slika4Carousel"></span>
+            <button id="nextImage" onclick="numbers.next()"><img src="images/next.png" alt="nextSlika"></button>
+            <button id="previousImage" onclick="numbers.prev()"><img src="images/prev.png" alt="prevSlika"></button>
+
+            <div id="buttons">
+                <button class="button button5" onclick="numbers.slide(0)"></button>
+                <button class="button button5" onclick="numbers.slide(1)"></button>
+                <button class="button button5" onclick="numbers.slide(2)"></button>
+                <button class="button button5" onclick="numbers.slide(3)"></button>
+            </div>
+            <div>
+                <img id="slikaMenu" src="images/menu.png" alt="menuSlika">
+            </div>
+
+        </div>
+        <div id="treciDiv">
+            <table>
+                <tr>
+                    <td>
+                    <th class="centerleft"> Voluptate cillum fugiat
+                    <th class="paddingRight">-------------------- $50 </th>
+                    </th>
+                    </td>
+                    <td>
+                    <th class="centerleft">Arcu pede enim justo.
+                    <th class="paddingRight">-------------------- $50</th>
+                    </th>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                    <th class="centerleft"> Metus varius laoreet
+                    <th class="paddingRight">-------------------- $62</th>
+                    </th>
+                    </td>
+                    <td>
+                    <th class="centerleft">Cras dapibussemper nisi.
+                    <th class="paddingRight">-------------------- $32</th>
+                    </th>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <th class="centerleft"> Donec sodales magna.</th>
+                    <th class="paddingRight"> -------------------- $25 </th>
+                    </td>
+                    <td>
+                    <th class="centerleft">Quam semper libero.</th>
+                    <th class="paddingRight">-------------------- $15</th>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <th class="centerleft"> Saugue velit cursus</th>
+                    <th class="paddingRight">-------------------- $30</th>
+                    </td>
+                    <td>
+                    <th class="centerleft">Nam eget dui Etiam.</th>
+                    <th class="paddingRight">-------------------- $35</th>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="w3-container centerthisnonsence">
+                    <button id="noBackground" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black"><img id="slikaBackgronud" src="images/allmenu.jpg" alt="menuImages"></button>
+                  
+                    <div id="id01" class="w3-modal">
+                      <div class="w3-modal-content">
+                        <div class="w3-container">
+                          <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                          <p>Some text. Some text. Some text.</p>
+                          <p>Some text. Some text. Some text.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+        </div>
+        <div id="cetvrtiDiv">
+
+
+
+        </div>
+        <div id="petiDiv">
+
+        </div>
+        <div id="sestiDiv">
+
+        </div>
+        <div id="footer">
+
+        </div>
+    </div>
+
+
+
+    <script src="js/index.js"></script>
+    <script src="js/carousel.js"></script>
+    <script>
+        var numbers = new Carousel();
+    </script>
+
+</body>
+
+</html>

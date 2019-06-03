@@ -1,0 +1,82 @@
+#wrapper {
+  margin: 0%;
+  padding: 0%;
+}
+#wrapper #header {
+  background-color: whitesmoke;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#wrapper #header img {
+  margin-left: 15%;
+}
+#wrapper #header #menu {
+  float: right;
+  margin-right: 15%;
+}
+#wrapper #header #menu p {
+  width: auto;
+  float: left;
+  text-align: center;
+  margin: 5px 25px 5px 0px;
+}
+#wrapper #header #menu p:hover {
+  color: red;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+}
+#wrapper #drugiDiv .carousel {
+  border-bottom: 2px solid red;
+}
+#wrapper #drugiDiv #nextImage {
+  position: relative;
+  transform: translate(1350px, -335px);
+}
+#wrapper #drugiDiv #previousImage {
+  position: relative;
+  transform: translate(0px, -335px);
+}
+#wrapper #drugiDiv #buttons {
+  transform: translate(650px, -125px);
+}
+#wrapper #drugiDiv #buttons .button {
+  background-color: whitesmoke;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+#wrapper #drugiDiv #buttons .button5 {
+  border-radius: 50%;
+}
+#wrapper #drugiDiv #slikaMenu {
+  transform: translate(670px, -100px);
+}
+#wrapper #treciDiv .centerleft {
+  text-align: left;
+}
+#wrapper #treciDiv .paddingRight {
+  padding-right: 50px;
+}
+#wrapper #treciDiv table {
+  margin: 0% auto;
+  transform: translate(150px, -50px);
+}
+#wrapper #treciDiv table tr {
+  height: 50px;
+}
+#wrapper #treciDiv table .substring {
+  text-decoration: whitesmoke;
+}
+#wrapper .centerthisnonsence {
+  padding-left: 650px;
+}
+#wrapper #noBackground {
+  background: whitesmoke;
+}
+
+/*# sourceMappingURL=style.css.map */

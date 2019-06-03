@@ -1,0 +1,53 @@
+body {
+    padding-top:55px;
+}
+
+h3 {
+    text-align: center;
+}
+
+img {
+    width:100%;
+}
+
+.wrapperHead {
+    width: 100%;
+    background-color: rgb(163, 7, 33);
+}
+
+.head {
+    background-image: url(./../img/head.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+}
+
+.wrapperBody {
+    width: 100%;
+    background-color: papayawhip;
+    
+}
+
+.body {
+    background-color: black;  
+}
+
+.contentItem {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-top: 5px solid rgb(145, 2, 114);
+    border-bottom: 5px solid rgb(145, 2, 114);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav-up {
+    top: -60px;
+}
