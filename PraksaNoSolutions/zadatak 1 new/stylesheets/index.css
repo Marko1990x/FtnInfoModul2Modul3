@@ -210,5 +210,26 @@ body #imagesWrapper table #rowspanimg {
   height: 450px;
   width: 400px;
 }
+body #redButton {
+  height: auto;
+  background-color: whitesmoke;
+  width: 100%;
+  margin: 0% auto;
+}
+body #redButton img {
+  float: right;
+  padding-top: 40px;
+}
+body #footerNonsence {
+  display: inline-flex;
+  background-color: #3b3b3b;
+  width: 100%;
+}
+body #footerNonsence ul {
+  padding-top: 40px;
+  margin: 0% auto;
+  padding-bottom: 40px;
+  color: whitesmoke;
+}
 
 /*# sourceMappingURL=index.css.map */

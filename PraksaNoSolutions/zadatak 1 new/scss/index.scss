@@ -277,4 +277,27 @@ body {
     }
 
 
+    #redButton{
+        height: auto;
+        background-color: whitesmoke;
+        width: 100%;
+        margin: 0% auto;
+        img{
+            float: right;
+            padding-top: 40px;
+        }
+    }
+
+    #footerNonsence{
+        display: inline-flex;
+        background-color: #3b3b3b;
+        width: 100%;
+        ul{
+            padding-top: 40px;
+            margin: 0% auto;
+            padding-bottom: 40px;
+            color: whitesmoke;
+        }
+    }
+
 }
