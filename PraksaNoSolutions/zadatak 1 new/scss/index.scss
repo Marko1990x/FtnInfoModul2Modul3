@@ -121,6 +121,77 @@ body {
        
     }
 
-    
+    #featuredDishes{
+        display: inline;
+        p{
+            width: auto;
+            display: inline-block;
+            margin-left: 3%;
+        }
+        #resize{
+            width: 150px;
+            float: right;
+        }
+        .buttonX{
+            background-color: rgb(165, 131, 131);
+        }
+
+        
+    }
+
+    #wrapperImagesFeatured{
+        width: 100%;
+        #imagesFeatured{
+            width: 900px;
+            margin: 0% auto;
+            img{
+                width: 200px;
+                height: auto;
+                padding-right: 20px;
+                
+            }
+            #firstimg{
+                margin-left: 5%;
+            }
+        }
+    }
+
+    .heartImage{
+        height: 20px;
+        width: 20px;
+    }
+
+    .shorten{
+        width: 40px;
+    }
+
+    #table1{
+        width: 70%;
+        margin: 0% auto;
+       
+        
+    }
+
+    #table1, #table2{
+        font-size: 10px;
+        font-style: italic;
+    }
+    #table2{
+        margin: 0% auto;
+        width: 71%;
+    }
+
+    #fix0, #fix1, #fix2,#fix3{
+        width: 120px;
+    }
+    #fix00, #fix11, #fix22,#fix33{
+        text-align: center;
+    }
+    #fix2{
+        padding-left: 5px;
+    }
+    #fix3{
+        padding-left: 8px;
+    }
 
 }
