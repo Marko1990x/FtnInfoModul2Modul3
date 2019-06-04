@@ -1,0 +1,126 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+#wrapper {
+    height: auto;
+    width: 100%;
+
+    #header {
+        height: 50px;
+        background-color: whitesmoke;
+        width: inherit;
+
+
+        #menuHeader {
+            float: right;
+            padding-top: 15px;
+            margin-right: 10%;
+
+            span {
+                margin-right: 10px;
+
+                &:hover {
+                    color: red;
+                    border-top: 1px solid red;
+                    border-bottom: 1px solid red;
+                }
+            }
+        }
+
+        #imgHeader {
+            padding-top: 10px;
+            margin-left: 10%;
+        }
+    }
+
+
+    #caro {
+
+        width: 100%;
+
+        .carousel {
+            img {
+                width: 100%;
+                border-bottom: 2px solid red;
+            }
+        }
+
+
+        #previousImage {
+            position: absolute;
+            top: 35%;
+            left: 5%;
+        }
+
+        #nextImage {
+            position: absolute;
+            top: 35%;
+            right: 5%;
+        }
+
+        #buttons {
+            position: absolute;
+            top: 460px;
+            left: 47%;
+        }
+
+        #slikaMenu {
+            position: absolute;
+            top: 494px;
+            left: 45%;
+        }
+    }
+
+    .button {
+        background-color: whitesmoke;
+        border: none;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+      }
+
+    .button5 {border-radius: 50%;}
+
+    #table{
+        height: auto;
+        background-color: whitesmoke;
+        margin-top: 100px;
+        
+        table{
+            margin: 0% auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            .italic{
+                font-size: 25px;
+                font-style: italic;
+            }
+        }
+
+        #modal{
+            margin-left: 43%;
+            padding-bottom: 20px;
+        }
+        .w3-container{
+            table{
+                margin: 0% auto;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                .italic{
+                    font-size: 20px;
+                    font-style: bold;
+                }
+            }
+            
+        }
+       
+    }
+
+    
+
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marko Praksa zadatak 1</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <script src="js/carousel.js"></script>
+    <script src="js/index.js"></script>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <div id="header">
+            <img id="imgHeader" src="images/logo.png" alt="logoPng">
+            <div id="menuHeader">
+                <span>Menu</span>
+                <span>Diches</span>
+                <span>About Us</span>
+                <span>Gallery</span>
+            </div>
+        </div>
+        <div id="caro">
+            <span class="carousel"><img src="images/slider1.jpg" alt="slika1Carousel"></span>
+            <span class="carousel"><img src="images/slider2.jpg" alt="slika2Carousel"></span>
+            <span class="carousel"><img src="images/slider3.jpg" alt="Slika3Carousel"></span>
+            <span class="carousel"><img src="images/slider2.jpg" alt="slika4Carousel"></span>
+            <button id="nextImage" onclick="numbers.next()"><img src="images/next.png" alt="nextSlika"></button>
+            <button id="previousImage" onclick="numbers.prev()"><img src="images/prev.png" alt="prevSlika"></button>
+
+            <div id="buttons">
+                <button class="button button5" onclick="numbers.slide(0)"></button>
+                <button class="button button5" onclick="numbers.slide(1)"></button>
+                <button class="button button5" onclick="numbers.slide(2)"></button>
+                <button class="button button5" onclick="numbers.slide(3)"></button>
+            </div>
+            <div>
+                <img id="slikaMenu" src="images/menu.png" alt="menuSlika">
+            </div>
+
+        </div>
+
+        <div id="table">
+            <table>
+               
+                <tr><td class="italic">Voluptate Cillum fugiat</td><td>----------------$50</td><td></td><td></td><td class="italic">Arcu pede enim justo.</td><td>----------------$45</td></tr>
+                <tr><td>Cheese, tomato, mushrooms, onions.</td><td></td><td></td><td></td><td>Tuna, Sweetcorn, Chese</td><td></td></tr>
+                <tr><td class="italic">Metus varius laoret.</td><td>----------------$62</td><td></td><td></td><td class="italic">Cras dapibussemper nisi.</td><td>----------------$32</td></tr>
+                <tr><td>Chicken, mozzarela, chese, onions</td><td></td><td></td><td></td><td>Pinapple, Minced Beef, Chese</td><td></td></tr>
+                <tr><td class="italic">Donec sodales magna.</td><td>----------------$25</td><td></td><td></td><td class="italic">Quam semper libero</td><td>----------------$15</td></tr>
+                <tr><td>Tuna, sweetcorn, Cheese</td><td></td><td></td><td></td><td>Chese, tomato, mushrooms, onions</td><td></td></tr>
+                <tr><td class="italic">Saugue velit curcus.</td><td>----------------$30</td><td></td><td></td><td class="italic">Nam eget dui Etiam.</td><td>----------------$35</td></tr>
+                <tr><td>Pinapple, Minced Beef, Cheese.</td><td></td><td></td><td></td><td>Chicken, mozzarela chese, onions.</td><td></td></tr>
+            </table>
+
+            <div class="w3-container">
+                    <span id="modal" onclick="document.getElementById('id01').style.display='block'"><img src="images/allmenu.jpg" alt="menupng"></span>
+                  
+                    <div id="id01" class="w3-modal">
+                      <div class="w3-modal-content">
+                        <div class="w3-container">
+                          <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                          <table>
+               
+                                <tr><td class="italic">Voluptate Cillum fugiat</td><td>----------------$50</td><td></td><td></td><td class="italic">Arcu pede enim justo.</td><td>----------------$45</td></tr>
+                                <tr><td>Cheese, tomato, mushrooms, onions.</td><td></td><td></td><td></td><td>Tuna, Sweetcorn, Chese</td><td></td></tr>
+                                <tr><td class="italic">Metus varius laoret.</td><td>----------------$62</td><td></td><td></td><td class="italic">Cras dapibussemper nisi.</td><td>----------------$32</td></tr>
+                                <tr><td>Chicken, mozzarela, chese, onions</td><td></td><td></td><td></td><td>Pinapple, Minced Beef, Chese</td><td></td></tr>
+                                <tr><td class="italic">Donec sodales magna.</td><td>----------------$25</td><td></td><td></td><td class="italic">Quam semper libero</td><td>----------------$15</td></tr>
+                                <tr><td>Tuna, sweetcorn, Cheese</td><td></td><td></td><td></td><td>Chese, tomato, mushrooms, onions</td><td></td></tr>
+                                <tr><td class="italic">Saugue velit curcus.</td><td>----------------$30</td><td></td><td></td><td class="italic">Nam eget dui Etiam.</td><td>----------------$35</td></tr>
+                                <tr><td>Pinapple, Minced Beef, Cheese.</td><td></td><td></td><td></td><td>Chicken, mozzarela chese, onions.</td><td></td></tr>
+                                <tr><td class="italic">Voluptate Cillum fugiat</td><td>----------------$50</td><td></td><td></td><td class="italic">Arcu pede enim justo.</td><td>----------------$45</td></tr>
+                                <tr><td>Cheese, tomato, mushrooms, onions.</td><td></td><td></td><td></td><td>Tuna, Sweetcorn, Chese</td><td></td></tr>
+                                <tr><td class="italic">Metus varius laoret.</td><td>----------------$62</td><td></td><td></td><td class="italic">Cras dapibussemper nisi.</td><td>----------------$32</td></tr>
+                                <tr><td>Chicken, mozzarela, chese, onions</td><td></td><td></td><td></td><td>Pinapple, Minced Beef, Chese</td><td></td></tr>
+                                <tr><td class="italic">Donec sodales magna.</td><td>----------------$25</td><td></td><td></td><td class="italic">Quam semper libero</td><td>----------------$15</td></tr>
+                                <tr><td>Tuna, sweetcorn, Cheese</td><td></td><td></td><td></td><td>Chese, tomato, mushrooms, onions</td><td></td></tr>
+                                <tr><td class="italic">Saugue velit curcus.</td><td>----------------$30</td><td></td><td></td><td class="italic">Nam eget dui Etiam.</td><td>----------------$35</td></tr>
+                                <tr><td>Pinapple, Minced Beef, Cheese.</td><td></td><td></td><td></td><td>Chicken, mozzarela chese, onions.</td><td></td></tr>
+                                <tr><td class="italic">Voluptate Cillum fugiat</td><td>----------------$50</td><td></td><td></td><td class="italic">Arcu pede enim justo.</td><td>----------------$45</td></tr>
+                                <tr><td>Cheese, tomato, mushrooms, onions.</td><td></td><td></td><td></td><td>Tuna, Sweetcorn, Chese</td><td></td></tr>
+                                <tr><td class="italic">Metus varius laoret.</td><td>----------------$62</td><td></td><td></td><td class="italic">Cras dapibussemper nisi.</td><td>----------------$32</td></tr>
+                                <tr><td>Chicken, mozzarela, chese, onions</td><td></td><td></td><td></td><td>Pinapple, Minced Beef, Chese</td><td></td></tr>
+                                <tr><td class="italic">Donec sodales magna.</td><td>----------------$25</td><td></td><td></td><td class="italic">Quam semper libero</td><td>----------------$15</td></tr>
+                                <tr><td>Tuna, sweetcorn, Cheese</td><td></td><td></td><td></td><td>Chese, tomato, mushrooms, onions</td><td></td></tr>
+                                <tr><td class="italic">Saugue velit curcus.</td><td>----------------$30</td><td></td><td></td><td class="italic">Nam eget dui Etiam.</td><td>----------------$35</td></tr>
+                                <tr><td>Pinapple, Minced Beef, Cheese.</td><td></td><td></td><td></td><td>Chicken, mozzarela chese, onions.</td><td></td></tr>
+                            </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+    <script>
+        var numbers = new Carousel();
+    </script>
+
+</body>
+
+</html>

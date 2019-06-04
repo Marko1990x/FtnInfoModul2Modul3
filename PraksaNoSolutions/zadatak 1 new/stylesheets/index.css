@@ -1,0 +1,101 @@
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+#wrapper {
+  height: auto;
+  width: 100%;
+}
+#wrapper #header {
+  height: 50px;
+  background-color: whitesmoke;
+  width: inherit;
+}
+#wrapper #header #menuHeader {
+  float: right;
+  padding-top: 15px;
+  margin-right: 10%;
+}
+#wrapper #header #menuHeader span {
+  margin-right: 10px;
+}
+#wrapper #header #menuHeader span:hover {
+  color: red;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+}
+#wrapper #header #imgHeader {
+  padding-top: 10px;
+  margin-left: 10%;
+}
+#wrapper #caro {
+  width: 100%;
+}
+#wrapper #caro .carousel img {
+  width: 100%;
+  border-bottom: 2px solid red;
+}
+#wrapper #caro #previousImage {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+}
+#wrapper #caro #nextImage {
+  position: absolute;
+  top: 35%;
+  right: 5%;
+}
+#wrapper #caro #buttons {
+  position: absolute;
+  top: 460px;
+  left: 47%;
+}
+#wrapper #caro #slikaMenu {
+  position: absolute;
+  top: 494px;
+  left: 45%;
+}
+#wrapper .button {
+  background-color: whitesmoke;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+#wrapper .button5 {
+  border-radius: 50%;
+}
+#wrapper #table {
+  height: auto;
+  background-color: whitesmoke;
+  margin-top: 100px;
+}
+#wrapper #table table {
+  margin: 0% auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#wrapper #table table .italic {
+  font-size: 25px;
+  font-style: italic;
+}
+#wrapper #table #modal {
+  margin-left: 43%;
+  padding-bottom: 20px;
+}
+#wrapper #table .w3-container table {
+  margin: 0% auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#wrapper #table .w3-container table .italic {
+  font-size: 20px;
+  font-style: bold;
+}
+
+/*# sourceMappingURL=index.css.map */
