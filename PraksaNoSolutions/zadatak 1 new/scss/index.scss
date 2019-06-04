@@ -83,115 +83,198 @@ body {
         display: inline-block;
         font-size: 16px;
         margin: 4px 2px;
-      }
+    }
 
-    .button5 {border-radius: 50%;}
+    .button5 {
+        border-radius: 50%;
+    }
 
-    #table{
+    #table {
         height: auto;
         background-color: whitesmoke;
         margin-top: 100px;
-        
-        table{
+
+        table {
             margin: 0% auto;
             padding-top: 30px;
             padding-bottom: 30px;
-            .italic{
+
+            .italic {
                 font-size: 25px;
                 font-style: italic;
             }
         }
 
-        #modal{
+        #modal {
             margin-left: 43%;
             padding-bottom: 20px;
         }
-        .w3-container{
-            table{
+
+        .w3-container {
+            table {
                 margin: 0% auto;
                 padding-top: 30px;
                 padding-bottom: 30px;
-                .italic{
+
+                .italic {
                     font-size: 20px;
                     font-style: bold;
                 }
             }
-            
+
         }
-       
+
     }
 
-    #featuredDishes{
+    #featuredDishes {
         display: inline;
-        p{
+
+        p {
             width: auto;
             display: inline-block;
             margin-left: 3%;
         }
-        #resize{
+
+        #resize {
             width: 150px;
             float: right;
         }
-        .buttonX{
+
+        .buttonX {
             background-color: rgb(165, 131, 131);
         }
 
-        
+
     }
 
-    #wrapperImagesFeatured{
+    #wrapperImagesFeatured {
         width: 100%;
-        #imagesFeatured{
+
+        #imagesFeatured {
             width: 900px;
             margin: 0% auto;
-            img{
+
+            img {
                 width: 200px;
                 height: auto;
                 padding-right: 20px;
-                
+
             }
-            #firstimg{
+
+            #firstimg {
                 margin-left: 5%;
             }
         }
     }
 
-    .heartImage{
+    .heartImage {
         height: 20px;
         width: 20px;
     }
 
-    .shorten{
+    .shorten {
         width: 40px;
     }
 
-    #table1{
+    #table1 {
         width: 70%;
         margin: 0% auto;
-       
-        
+
+
     }
 
-    #table1, #table2{
+    #table1,
+    #table2 {
         font-size: 10px;
         font-style: italic;
     }
-    #table2{
+
+    #table2 {
         margin: 0% auto;
         width: 71%;
     }
 
-    #fix0, #fix1, #fix2,#fix3{
+    #fix0,
+    #fix1,
+    #fix2,
+    #fix3 {
         width: 120px;
     }
-    #fix00, #fix11, #fix22,#fix33{
+
+    #fix00,
+    #fix11,
+    #fix22,
+    #fix33 {
         text-align: center;
     }
-    #fix2{
+
+    #fix2 {
         padding-left: 5px;
     }
-    #fix3{
+
+    #fix3 {
         padding-left: 8px;
     }
+
+
+    #aboutus {
+        width: 80%;
+        margin: 0% auto;
+
+        #naslov1 {
+            width: 70%;
+            font-size: 20px;
+            font-style: bold;
+        }
+
+        #naslov2 {
+            font-size: 20px;
+        }
+
+        table {
+            #floatRight {
+                float: right;
+            }
+
+            #setFont {
+                font-size: 20px;
+                font-style: italic;
+            }
+        }
+    }
+
+    #gallery {
+        hr {
+            width: 150px;
+            background-color: 2px solid whitesmoke;
+            display: inline-flex;
+        }
+    }
+}
+
+body {
+    #imagesWrapper {
+        background-color: grey;
+        width: 80%;
+        margin: 0% auto;
+        //display: inline-block;
+
+        table{
+            td{
+                border: 1px solid whitesmoke;
+            }
+            margin: 0%;
+            padding: 0%;
+            img{
+                height: 220px;
+                width: 300px;
+            }
+            #rowspanimg{
+                height: 450px;
+                width: 400px;
+            }
+        }
+    }
+
 
 }
