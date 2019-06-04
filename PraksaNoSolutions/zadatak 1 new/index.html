@@ -8,10 +8,9 @@
     <title>Marko Praksa zadatak 1</title>
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="stylesheets/index.css">
     <script src="js/carousel.js"></script>
-    <script src="js/index.js"></script>
-    <script src="js/lightbox.js"></script>
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
 
 </head>
 
@@ -22,10 +21,10 @@
         <div id="header">
             <img id="imgHeader" src="images/logo.png" alt="logoPng">
             <div id="menuHeader">
-                <span>Menu</span>
-                <span>Diches</span>
-                <span>About Us</span>
-                <span>Gallery</span>
+                <span><a href="#table">Menu</a></span>
+                <span><a href="#wrapperImagesFeatured">Diches</a></span>
+                <span><a href="#aboutus">About Us</a></span>
+                <span><a href="#gallery">Gallery</a></span>
             </div>
         </div>
         <div id="caro">
@@ -360,14 +359,14 @@
 
             <table id="table2">
                 <tr>
-                    <td class="shorten"><img class="heartImage" src="images/2-2-heart-png-hd.png" alt="heartpng"></td>
-                    <td>x people love this</td>
-                    <td class="shorten"><img class="heartImage" src="images/2-2-heart-png-hd.png" alt="heartpng"></td>
-                    <td>x people love this</td>
-                    <td class="shorten"><img class="heartImage" src="images/2-2-heart-png-hd.png" alt="heartpng"></td>
-                    <td>x people love this</td>
-                    <td class="shorten"><img class="heartImage" src="images/2-2-heart-png-hd.png" alt="heartpng"></td>
-                    <td>x people love this</td>
+                    <td id="buttonclick1" class="shorten"><img id="slika1" class="heartImage" src="images/heart-regular.svg" alt="heartpng"></td>
+                    <td id="filltext1">x people love this</td>
+                    <td id="buttonclick2" class="shorten"><img id="slika2" class="heartImage" src="images/heart-regular.svg" alt="heartpng"></td>
+                    <td id="filltext2">x people love this</td>
+                    <td id="buttonclick3" class="shorten"><img id="slika3" class="heartImage" src="images/heart-regular.svg" alt="heartpng"></td>
+                    <td id="filltext3">x people love this</td>
+                    <td id="buttonclick4" class="shorten"><img id="slika4" class="heartImage" src="images/heart-regular.svg" alt="heartpng"></td>
+                    <td id="filltext4">x people love this</td>
                 </tr>
             </table>
         </div>
@@ -434,13 +433,6 @@
     <div id="redButton">
         <img src="images/totop.png" alt="top">
     </div>
-
-
-
-
-
-
-
     <div id="footerNonsence">
         <ul>
             <li>New York Restaurant</li>
@@ -468,12 +460,8 @@
     </div>
 
 
-
-
-
-
-
-
+    <script src="js/index.js"></script>
+    <script src="js/scroll.js"></script>
     <script>
         var numbers = new Carousel();
     </script>
