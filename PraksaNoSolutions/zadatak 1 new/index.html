@@ -11,6 +11,9 @@
     <script src="js/carousel.js"></script>
     <link rel="stylesheet" href="stylesheets/index.css">
     <script src="js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="stylesheets/lightbox.css">
+    <script src="js/lightbox.js"></script>
+    <!--requires jquerry 1.7 or higher-->
 
 </head>
 
@@ -359,13 +362,17 @@
 
             <table id="table2">
                 <tr>
-                    <td id="buttonclick1" class="shorten"><img id="slika1" class="heartImage" src="images/heart-regular.svg" alt="heartpng"></td>
+                    <td id="buttonclick1" class="shorten"><img id="slika1" class="heartImage"
+                            src="images/heart-regular.svg" alt="heartpng"></td>
                     <td id="filltext1">x people love this</td>
-                    <td id="buttonclick2" class="shorten"><img id="slika2" class="heartImage" src="images/heart-regular.svg" alt="heartpng"></td>
+                    <td id="buttonclick2" class="shorten"><img id="slika2" class="heartImage"
+                            src="images/heart-regular.svg" alt="heartpng"></td>
                     <td id="filltext2">x people love this</td>
-                    <td id="buttonclick3" class="shorten"><img id="slika3" class="heartImage" src="images/heart-regular.svg" alt="heartpng"></td>
+                    <td id="buttonclick3" class="shorten"><img id="slika3" class="heartImage"
+                            src="images/heart-regular.svg" alt="heartpng"></td>
                     <td id="filltext3">x people love this</td>
-                    <td id="buttonclick4" class="shorten"><img id="slika4" class="heartImage" src="images/heart-regular.svg" alt="heartpng"></td>
+                    <td id="buttonclick4" class="shorten"><img id="slika4" class="heartImage"
+                            src="images/heart-regular.svg" alt="heartpng"></td>
                     <td id="filltext4">x people love this</td>
                 </tr>
             </table>
@@ -418,13 +425,14 @@
 
         <table>
             <tr>
-                <td rowspan="2"><img id="rowspanimg" src="images/pic1.jpg" alt="slika1"></td>
-                <td><img src="images/pic2.jpg" alt="slika2"></td>
-                <td><img src="images/pic3.jpg" alt="slika3"></td>
+                <td id="setwidth" rowspan="2"><a href="images/pic1.jpg" data-lightbox="imgset-1" data-title="Tasty Pasta"><img id="rowspanimg" src="images/pic1.jpg" alt="slika1"></a></td>
+                <td><a href="images/pic2.jpg" data-lightbox="imgset-1" data-title="Tasty Treats"><img src="images/pic1.jpg"
+                            alt="image1"></a></td>
+                <td> <a href="images/pic3.jpg" data-lightbox="imgset-1" data-title="Pizza"><img src="images/pic3.jpg" alt="slika3"></a></td>
             </tr>
             <tr>
-                <td><img src="images/pic4.jpg" alt="slika4"></td>
-                <td><img src="images/pic5.jpg" alt="slika4"></td>
+                <td> <a href="images/pic4.jpg" data-lightbox="imgset-1" data-title="Grapes"><img src="images/pic4.jpg" alt="slika4"></a></td>
+                <td> <a href="images/pic5.jpg" data-lightbox="imgset-1" data-title="Pasta"><img src="images/pic5.jpg" alt="slika4"></a></td>
             </tr>
         </table>
 
@@ -454,7 +462,8 @@
         </ul>
         <ul>
             <li><img src="images/logo_w.png" alt="logoFooter"></li>
-            <li>&copy;All Rights Reserved 2014</li>    <!--& pa copy ; za copyright znak-->
+            <li>&copy;All Rights Reserved 2014</li>
+            <!--& pa copy ; za copyright znak-->
             <li>Find More at <a href="Pixelhint.com"><b>Pixelhint.com</b></a> </li>
         </ul>
     </div>

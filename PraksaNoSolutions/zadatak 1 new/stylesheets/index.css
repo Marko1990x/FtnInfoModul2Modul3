@@ -199,16 +199,19 @@ body #imagesWrapper table {
   margin: 0%;
   padding: 0%;
 }
+body #imagesWrapper table #setwidth {
+  min-width: auto;
+}
 body #imagesWrapper table td {
   border: 1px solid whitesmoke;
 }
 body #imagesWrapper table img {
-  height: 220px;
-  width: 300px;
+  height: 34%;
+  width: 100%;
 }
 body #imagesWrapper table #rowspanimg {
-  height: 450px;
-  width: 400px;
+  height: 70%;
+  width: 100%;
 }
 body #redButton {
   height: auto;
